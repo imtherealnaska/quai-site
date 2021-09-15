@@ -14,8 +14,7 @@
               v-text="item.date"
             ></span>
           </template>
-          <v-card
-            elevation="2"
+          <div
             class="roadmap-card"
             style="width: 100%"
             :class="item.right ? 'text-right' : ''"
@@ -34,7 +33,7 @@
                 >
               </div>
             </v-card-text>
-          </v-card>
+          </div>
         </v-timeline-item>
       </v-timeline>
     </v-container>
@@ -53,7 +52,7 @@ export default {
       },
       {
         color: '#e6614eff',
-        date: 'Q4 2022',
+        date: 'Q4 2021',
         title: 'Tool Ramp-Up',
         description: 'Block Explorer\nNetwork Analyzer',
         right: true,
@@ -79,9 +78,9 @@ export default {
 </script>
 <style scoped>
 .roadmap-card {
-  -webkit-box-shadow: 0 0 20px white;
-  -moz-box-shadow: 0 0 20px white;
-  box-shadow: 0 0 20px white;
+  -webkit-box-shadow: 0 0 20px red;
+  -moz-box-shadow: 0 0 20px red;
+  box-shadow: 0 0 20px red;
   overflow: hidden;
   border-radius: 25px;
 }

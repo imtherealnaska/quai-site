@@ -20,5 +20,12 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-btn
+      elevation="2"
+      raised
+      x-large
+      style="margin-top: 200px; display: flex; margin: 0 auto"
+      >Read The Whitepaper</v-btn
+    >
   </div>
 </template>

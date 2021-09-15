@@ -33,7 +33,7 @@ export default {
 
 <style>
 .background {
-  background-image: url('./static/rose-petals.svg');
+  /* background-image: url('./static/rose-petals.svg'); */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
