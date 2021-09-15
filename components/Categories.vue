@@ -1,178 +1,181 @@
 <template>
-  <div style="height: 100%">
-    <v-container>
-      <v-lazy>
-        <v-row justify="space-between" style="margin-top: 10%; width: 100%">
-          <v-col cols="4" sm="6" md="6" style="padding-right: 30px">
-            <div class="quai-category-card-1" style="width: 100%">
-              <img
-                class="center-wolfram wolfram-bg"
-                alt="Wolfram Mesh"
-                src="wolfram/mesh.svg"
-                style="height: 900px"
-              />
-              <v-card-text>
-                <p
-                  class="text-h3 gradient-text-1"
-                  style="font-size: 5 rem !important"
-                >
-                  Payments
-                </p>
-                <div class="text--primary">
-                  A description of what can be done<br />
-                  with Quai
-                </div>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn text color="#dda50a"> Learn More </v-btn>
-              </v-card-actions>
-            </div>
-            <div
-              elevation="2"
-              class="quai-category-card-3"
-              style="width: 100%; margin-top: 20%"
-            >
-              <img
-                class="center-wolfram wolfram-bg"
-                alt="Wolfram Web"
-                src="wolfram/web.svg"
-                style="height: 700px"
-              />
-              <v-card-text>
-                <p class="text-h3 gradient-text-3">NFTs</p>
-                <div class="text--primary">
-                  A description of what can be done<br />
-                  with Quai
-                </div>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn text color="#0addcb"> Learn More </v-btn>
-              </v-card-actions>
-            </div>
-          </v-col>
-          <v-col cols="2" sm="6" md="6" style="padding-left: 30px">
-            <v-card
-              elevation="2"
-              class="quai-category-card-2"
-              style="width: 100%; margin-top: 20%"
-            >
-              <img
-                class="center-wolfram wolfram-bg"
-                alt="Wolfram Leaves"
-                src="wolfram/leaves.svg"
-                style="height: 600px"
-              />
-              <v-card-text>
-                <p class="text-h3 gradient-text-2">DeFi</p>
-                <div class="text--primary">
-                  A description of what can be done<br />
-                  with Quai
-                </div>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn text color="#57dd0a"> Learn More </v-btn>
-              </v-card-actions>
-            </v-card>
-            <v-card
-              elevation="2"
-              class="quai-category-card-4"
-              style="width: 100%; margin-top: 20%"
-            >
-              <img
-                class="center-wolfram wolfram-bg"
-                alt="Wolfram Pillow"
-                src="wolfram/pillow.svg"
-                style="height: 500px"
-              />
-              <v-card-text>
-                <p class="text-h3 gradient-text-4">Gaming</p>
-                <div class="text--primary">
-                  Quai offers a low cost environment for
-                  <a
-                    href="https://github.com/spruce-solutions/go-quai/pull/78"
-                    target="_blank"
-                    >blockchain based gaming</a
-                  >
-                </div>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn text color="#9a0add"> Learn More </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-lazy>
-    </v-container>
+  <div class="quai-cards-wrapper">
+    <div class="quai-cards">
+      <div class="quai-category-card card-color-1" style="width: 100%">
+        <v-card-text>
+          <p
+            class="text-h3 gradient-text-1"
+            style="font-size: 5 rem !important"
+          >
+            Hermes
+          </p>
+          <div class="text--primary">
+            Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is an Olympian deity in ancient
+            Greek religion and mythology. Hermes is considered the herald of the
+            gods.<br />
+            with Quai
+          </div>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn text color="#dda50a"> Learn More </v-btn>
+        </v-card-actions>
+        <div class="floating-wolfram wolfram-bg-1"></div>
+      </div>
+      <div style="height: 300px"></div>
+      <div class="quai-category-card card-color-3">
+        <v-card-text>
+          <p class="text-h3 gradient-text-2">Janus</p>
+          <div class="text--primary">
+            Janus (/ˈdʒeɪnəs/ JAY-nəs; Latin: Iānus) is the god of beginnings,
+            gates, transitions, time, duality, doorways,[1] passages, frames,
+            and endings.
+          </div>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn text color="#57dd0a"> Learn More </v-btn>
+        </v-card-actions>
+        <div class="floating-wolfram wolfram-bg-3"></div>
+      </div>
+      <div class="quai-category-card card-color-2">
+        <v-card-text>
+          <p class="text-h3 gradient-text-3">Plutus</p>
+          <div class="text--primary">
+            Plutus (/ˈpluːtəs/; Greek: Πλοῦτος, translit. Ploûtos, lit.
+            "wealth") is the Greek god of wealth.
+          </div>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn text color="#0addcb"> Learn More </v-btn>
+        </v-card-actions>
+        <div class="floating-wolfram wolfram-bg-2"></div>
+      </div>
+      <div class="quai-category-card card-color-4">
+        <v-card-text>
+          <p class="text-h3 gradient-text-4">Ares</p>
+          <div class="text--primary">
+            Ares (/ˈɛəriːz/; Ancient Greek: Ἄρης) is the Greek god of courage
+            and war.<br />
+          </div>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn text color="#9a0add"> Learn More </v-btn>
+        </v-card-actions>
+        <div class="floating-wolfram wolfram-bg-4"></div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.quai-category-card-1 {
+.quai-cards-wrapper {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-bottom: 7em;
+  padding: 0px 2em;
+}
+
+.quai-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 616px));
+  grid-template-rows: repeat(5, minmax(0px, 300px));
+  grid-auto-rows: 1fr;
+  gap: 2.5em;
+}
+
+.quai-category-card {
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+  background-color: none !important;
+  width: 100%;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: 600px;
+}
+
+.card-color-1 {
   -webkit-box-shadow: 0 0 20px#dda50a !important;
   -moz-box-shadow: 0 0 20px #dda50a !important;
   box-shadow: 0 0 20px #dda50a !important;
-  background-color: none !important;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 25px;
-  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-.quai-category-card-2 {
-  -webkit-box-shadow: 0 0 20px #57dd0a !important;
-  -moz-box-shadow: 0 0 20px #57dd0a !important;
-  box-shadow: 0 0 20px #57dd0a !important;
-  background-color: none !important;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 25px;
-  position: relative;
-}
-
-.quai-category-card-3 {
+.card-color-2 {
   -webkit-box-shadow: 0 0 20px #0addcb !important;
   -moz-box-shadow: 0 0 20px #0addcb !important;
   box-shadow: 0 0 20px #0addcb !important;
-  background-color: none !important;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 25px;
-  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
-
-.quai-category-card-4 {
+.card-color-3 {
+  -webkit-box-shadow: 0 0 20px #57dd0a !important;
+  -moz-box-shadow: 0 0 20px #57dd0a !important;
+  box-shadow: 0 0 20px #57dd0a !important;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.card-color-4 {
   -webkit-box-shadow: 0 0 20px #9a0add !important;
   -moz-box-shadow: 0 0 20px #9a0add !important;
   box-shadow: 0 0 20px #9a0add !important;
-  background-color: none !important;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 25px;
-  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
 }
 
-.center-wolfram {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wolfram-bg {
+.floating-wolfram {
   position: absolute;
-  /* background by SVGBackgrounds.com */
+  width: 100%;
+  height: 100%;
   top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1)
   );
-  pointer-events: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.wolfram-bg:hover {
-  transform: scale(
-    1.05
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.floating-wolfram:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.wolfram-bg-1 {
+  background-image: url('./static/wolfram/mesh.svg');
+}
+
+.wolfram-bg-2 {
+  background-image: url('./static/wolfram/web.svg');
+}
+.wolfram-bg-3 {
+  background-image: url('./static/wolfram/leaves.svg');
+}
+.wolfram-bg-4 {
+  background-image: url('./static/wolfram/pillow.svg');
 }
 
 .gradient-text-1 {
@@ -181,6 +184,7 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .gradient-text-2 {
@@ -189,6 +193,7 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .gradient-text-3 {
@@ -197,13 +202,55 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .gradient-text-4 {
-  background: linear-gradient(179deg, #9a0add, rgb(236, 55, 55));
+  background: linear-gradient(160deg, #9a0add, rgb(236, 55, 55));
   line-height: 5.5rem;
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
+}
+
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+  .landing-title {
+    font-size: 120px;
+  }
+  .landing-desc {
+    font-size: 24px;
+  }
+}
+
+/*Hide in Other Small Devices */
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .landing-title {
+    font-size: 80px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .landing-title {
+    font-size: 80px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .landing-title {
+    font-size: 80px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .landing-title {
+    font-size: 80px;
+  }
 }
 </style>

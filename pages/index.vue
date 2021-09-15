@@ -1,20 +1,33 @@
 <template>
   <div style="height: 100%; overflow-y: scoll">
-    <Landing class="background2" />
-    <Categories />
-    <About />
-    <Roadmap />
+    <Landing />
+    <Categories style="margin-top: 20vh" />
+    <About style="margin-top: 20vh" />
+    <Roadmap style="margin-top: 20vh; margin-bottom: 20vh" />
   </div>
 </template>
 
-<style scoped>
-.background2 {
-  /* background-image: url('./static/parabolic-triangle.svg'); */
-  /* background by SVGBackgrounds.com */
-  background-image: url('./static/wolfram/wave.svg');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  min-height: 1000px;
+<script>
+export default {
+  data() {
+    return {
+      title: 'Merged Mined Blockchain Solution',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'Home',
+          name: 'Home',
+          content:
+            'Quai is a scalable network of blockchains designed for the future. Visit our site to learn more!',
+        },
+      ],
+    }
+  },
 }
-</style>
+</script>
+
+<style scoped></style>

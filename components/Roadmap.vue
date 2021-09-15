@@ -16,8 +16,10 @@
           </template>
           <div
             class="roadmap-card"
-            style="width: 100%"
-            :class="item.right ? 'text-right' : ''"
+            :class="
+              (item.right ? 'text-right' : '',
+              item.completed ? 'timeline-completed' : 'timeline-uncompleted')
+            "
           >
             <v-card-text>
               <p
@@ -46,42 +48,83 @@ export default {
     items: [
       {
         color: '#e6614eff',
-        date: 'Q3 2021',
-        title: 'Testnet Launch',
-        description: 'Security Hardeneing\nFinal Validations',
+        date: 'Q4 2018',
+        title: 'BlockReduce Publication',
+        description: 'Initial BlockReduce paper and mechanism design',
+        completed: true,
       },
       {
         color: '#e6614eff',
+        date: 'Q3 2019',
+        title: 'NSF Funding',
+        description: 'Initial backing from National Science Foundation (NSF)',
+        right: true,
+        completed: true,
+      },
+      {
+        color: '#e6614eff',
+        date: 'Q1 2021',
+        title: 'Seed Funding',
+        description: '',
+        completed: true,
+      },
+      {
+        color: 'white',
         date: 'Q4 2021',
-        title: 'Tool Ramp-Up',
-        description: 'Block Explorer\nNetwork Analyzer',
+        title: 'Quai Testnet Launch',
+        description: 'Security Hardeneing\nFinal Validations',
         right: true,
       },
       {
-        color: '#e6614eff',
+        color: 'white',
         date: 'Q1 2022',
-        title: 'Mainnet Launch',
-        description:
-          'Full launch with bootstrapped mining\nMerged mining on top of Bitcoin and Ethereum',
+        title: 'Tool Ramp-Up',
+        description: 'Block Explorer\nNetwork Analyzer',
       },
       {
-        color: '#e6614eff',
+        color: 'white',
+        date: 'Q2 2022',
+        title: 'Quai Mainnet Launch',
+        description:
+          'Full launch with bootstrapped mining\nMerged mining on top of Bitcoin and Ethereum',
+        right: true,
+      },
+      {
+        color: 'white',
         date: 'Beyond',
         title: 'Incentivization Programs',
         description:
           'Liquidity mining programs\nEthereum state snapshot airdrops\nNFT drops',
-        right: true,
       },
     ],
   }),
 }
 </script>
 <style scoped>
+.timeline-completed {
+  -webkit-box-shadow: 0 0 20px #ec4d37ff;
+  -moz-box-shadow: 0 0 20px #ec4d37ff;
+  box-shadow: 0 0 20px #ec4d37ff;
+}
+
+.timeline-uncompleted {
+  -webkit-box-shadow: 0 0 20px white;
+  -moz-box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px white;
+}
+
 .roadmap-card {
-  -webkit-box-shadow: 0 0 20px red;
-  -moz-box-shadow: 0 0 20px red;
-  box-shadow: 0 0 20px red;
   overflow: hidden;
   border-radius: 25px;
+  width: max-content !important;
+}
+
+.gradient-text-1 {
+  background: linear-gradient(120deg, #ec4d37ff, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.v-timeline-item_body {
+  width: 50px !important;
 }
 </style>
