@@ -20,7 +20,7 @@
               <v-btn color="white" text rounded class="my-2">
                 <v-col style="text-align: left !important"
                   >{{ item.title }}
-                  <p style="font-size: 12px">{{ item.desc }}</p>
+                  <!-- <p style="font-size: 12px">{{ item.desc }}</p> -->
                 </v-col>
               </v-btn>
             </v-row>
@@ -37,7 +37,7 @@ export default {
   data: () => ({
     lists: [
       [
-        { title: 'FAQs', desc: 'No stone left unturned' },
+        { title: 'FAQs', desc: 'Got a burning question?' },
         { title: 'Wallet Setup', desc: 'Receive and use Quai' },
         { title: 'Developer Docs', desc: 'Start building on Quai' },
         { title: 'Block Explorer', desc: 'Coming soon' },

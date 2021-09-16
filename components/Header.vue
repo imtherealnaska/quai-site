@@ -15,9 +15,9 @@
         justify-content: space-around;
       "
     >
-      <v-btn icon> Home </v-btn>
-      <v-btn icon> News </v-btn>
-      <v-btn icon> Developers </v-btn>
+      <v-btn color="white" text rounded> Home </v-btn>
+      <v-btn color="white" text rounded> News </v-btn>
+      <v-btn color="white" text rounded> Developers </v-btn>
       <v-btn v-if="this.now" style="position: absolute; right: 10px; top: 15px"
         >Testnet Launch {{ display.days }} Days {{ display.hours }} Hours
         {{ display.seconds }} Seconds</v-btn

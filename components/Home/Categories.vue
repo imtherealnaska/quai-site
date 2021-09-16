@@ -17,7 +17,9 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn text color="#dda50a"> Learn More </v-btn>
+          <v-btn text color="#dda50a" style="cursor: pointer">
+            Learn More
+          </v-btn>
         </v-card-actions>
         <div class="floating-wolfram wolfram-bg-1"></div>
       </div>
@@ -86,12 +88,11 @@
 }
 
 .quai-category-card {
-  overflow: hidden;
+  overflow: hidden !important;
   border-radius: 25px;
   position: relative;
   background-color: none !important;
   width: 100%;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -158,10 +159,10 @@
 }
 
 .floating-wolfram:hover {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .wolfram-bg-1 {
@@ -184,7 +185,6 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 .gradient-text-2 {
@@ -193,7 +193,6 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 .gradient-text-3 {
@@ -202,7 +201,6 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 .gradient-text-4 {
@@ -211,7 +209,6 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 /* Show in Large desktops and laptops */
