@@ -10,10 +10,26 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-    - name: executing remote ssh commands using password
+    - name: Copy repository contents
+      uses: garygrossgarten/github-action-scp@release
+      with:
+        local: "."
+        remote: var/www/quai-site
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.PASSWORD }}
+    # - name: Copy repository contents
+    #   uses: fifsky/ssh-action@master
+    #   with:
+    #     command: whoami
+    #     host: ${{ secrets.HOST }}
+    #     user: ${{ secrets.USER}}
+    #     key: ${{ secrets.KEY}}
+
+    - name: Build and start server
       uses: fifsky/ssh-action@master
       with:
-        command: whoami
+        command: npm run build && HOST=0.0.0.0 PORT=8080 npm run start
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USER}}
         key: ${{ secrets.KEY}}
