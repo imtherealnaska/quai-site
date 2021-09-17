@@ -2,6 +2,7 @@
   <div class="quai-cards-wrapper">
     <div class="quai-cards">
       <div class="quai-category-card card-color-1" style="width: 100%">
+        <div class="floating-wolfram wolfram-bg-1"></div>
         <v-card-text>
           <p
             class="text-h3 gradient-text-1"
@@ -21,10 +22,10 @@
             Learn More
           </v-btn>
         </v-card-actions>
-        <div class="floating-wolfram wolfram-bg-1"></div>
       </div>
       <div style="height: 300px"></div>
       <div class="quai-category-card card-color-3">
+        <div class="floating-wolfram wolfram-bg-3"></div>
         <v-card-text>
           <p class="text-h3 gradient-text-2">Janus</p>
           <div class="text--primary">
@@ -36,9 +37,9 @@
         <v-card-actions>
           <v-btn text color="#57dd0a"> Learn More </v-btn>
         </v-card-actions>
-        <div class="floating-wolfram wolfram-bg-3"></div>
       </div>
       <div class="quai-category-card card-color-2">
+        <div class="floating-wolfram wolfram-bg-2"></div>
         <v-card-text>
           <p class="text-h3 gradient-text-3">Plutus</p>
           <div class="text--primary">
@@ -49,9 +50,9 @@
         <v-card-actions>
           <v-btn text color="#0addcb"> Learn More </v-btn>
         </v-card-actions>
-        <div class="floating-wolfram wolfram-bg-2"></div>
       </div>
       <div class="quai-category-card card-color-4">
+        <div class="floating-wolfram wolfram-bg-4"></div>
         <v-card-text>
           <p class="text-h3 gradient-text-4">Ares</p>
           <div class="text--primary">
@@ -62,7 +63,6 @@
         <v-card-actions>
           <v-btn text color="#9a0add"> Learn More </v-btn>
         </v-card-actions>
-        <div class="floating-wolfram wolfram-bg-4"></div>
       </div>
     </div>
   </div>
@@ -140,6 +140,7 @@
 }
 
 .floating-wolfram {
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -152,6 +153,8 @@
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1)
   );
+  -webkit-backface-visibility: hidden; /* actual workaround */
+  backface-visibility: hidden; /* perhaps this is not needed */
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -163,6 +166,7 @@
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
+  rotation: 0.01; /* add to force matrix3d() */
 }
 
 .wolfram-bg-1 {

@@ -2,7 +2,7 @@
   <div style="height: 100%; overflow-y: scoll">
     <HomeLanding />
     <HomeCategories style="margin-top: 20vh" />
-    <HomeAbout style="margin-top: 20vh" />
+    <!-- <HomeAbout style="margin-top: 20vh" /> -->
     <HomeRoadmap style="margin-top: 20vh; margin-bottom: 20vh" />
   </div>
 </template>

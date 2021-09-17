@@ -64,7 +64,7 @@ export default {
   -webkit-text-fill-color: transparent;
   opacity: 2 !important;
   color: rgba(255, 255, 255, 1) !important;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .wolfram-bg {
@@ -76,7 +76,7 @@ export default {
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1)
   );
-  pointer-events: none;
+  /* pointer-events: none; */
   display: block;
   margin-left: 20%;
   margin-right: auto;
