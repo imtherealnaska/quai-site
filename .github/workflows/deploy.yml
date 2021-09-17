@@ -18,37 +18,19 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASSWORD }}
-    # - name: Copy repository contents
-    #   uses: fifsky/ssh-action@master
-    #   with:
-    #     command: whoami
-    #     host: ${{ secrets.HOST }}
-    #     user: ${{ secrets.USER}}
-    #     key: ${{ secrets.KEY}}
 
-    - name: Move files, build, and start server
+    - name: Move files
       uses: fifsky/ssh-action@master
       with:
-        command: mv quai-site /var/www && cd /var/www/quai-site && npm install && npm run build && HOST=0.0.0.0 PORT=8080 npm run start
+        command: rm -rf /var/www/quai-site && mv quai-site /var/www
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USER}}
         key: ${{ secrets.KEY}}
 
-    # - name: Copy repository contents via scp
-    #   uses: appleboy/scp-action@master
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     key: ${{ secrets.KEY }}
-    #     port: ${{ secrets.PORT }}
-    #     source: "."
-    #     target: "/var/www/quai-site"
-
-    # - name: Executing remote command
-    #   uses: appleboy/ssh-action@master
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     key: ${{ secrets.KEY }}
-    #     port: ${{ secrets.PORT }}
-    #     script: npm run build && HOST=0.0.0.0 PORT=8080 npm run start
+    - name: Install packages, build, and start server
+      uses: fifsky/ssh-action@master
+      with:
+        command: cd /var/www/quai-site && npm install && npm run build && HOST=0.0.0.0 PORT=8080 npm run start
+        host: ${{ secrets.HOST }}
+        user: ${{ secrets.USER}}
+        key: ${{ secrets.KEY}}
