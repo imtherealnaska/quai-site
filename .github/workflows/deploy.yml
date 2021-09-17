@@ -30,7 +30,7 @@ jobs:
     - name: Install packages, build, and start server
       uses: fifsky/ssh-action@master
       with:
-        command: cd /var/www/html/quai-site && npm install && pm2 stop quai-site && pm2 start 'npm run start' --name "quai-site"
+        command: cd /var/www/html/quai-site && npm install && npm run build && pm2 restart quai-site
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USER}}
         key: ${{ secrets.KEY}}
