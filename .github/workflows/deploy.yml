@@ -29,7 +29,7 @@ jobs:
     - name: Move files, build, and start server
       uses: fifsky/ssh-action@master
       with:
-        command: mv quai-site /var/www && cd /var/www &&  npm run build && HOST=0.0.0.0 PORT=8080 npm run start
+        command: mv quai-site /var/www && cd /var/www/quai-site && npm install && npm run build && HOST=0.0.0.0 PORT=8080 npm run start
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USER}}
         key: ${{ secrets.KEY}}
