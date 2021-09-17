@@ -28,4 +28,4 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: npm run build && npm run start
+        script: npm run build && HOST=0.0.0.0 PORT=8080 npm run start
