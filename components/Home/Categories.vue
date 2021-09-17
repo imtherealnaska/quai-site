@@ -170,17 +170,17 @@
 }
 
 .wolfram-bg-1 {
-  background-image: url('./static/wolfram/mesh.svg');
+  background-image: url('./static/wolfram/mesh.png');
 }
 
 .wolfram-bg-2 {
-  background-image: url('./static/wolfram/web.svg');
+  background-image: url('./static/wolfram/pillow.png');
 }
 .wolfram-bg-3 {
-  background-image: url('./static/wolfram/leaves.svg');
+  background-image: url('./static/wolfram/leaves.png');
 }
 .wolfram-bg-4 {
-  background-image: url('./static/wolfram/pillow.svg');
+  background-image: url('./static/wolfram/web.png');
 }
 
 .gradient-text-1 {
