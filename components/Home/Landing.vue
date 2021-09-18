@@ -36,7 +36,7 @@
     <img
       class="center-wolfram wolfram-bg"
       alt="Wolfram Web"
-      src="wolfram/wave.png"
+      src="wolfram/wave.svg"
     />
   </div>
 </template>
