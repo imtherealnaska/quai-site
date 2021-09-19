@@ -1,6 +1,17 @@
 <template>
   <div class="quai-cards-wrapper">
     <div class="quai-cards">
+      <div class="quai-category-card features" style="width: 100%">
+        <v-card-text>
+          <p
+            class="text-h3 gradient-text-features"
+            style="font-size: 5 rem !important"
+          >
+            Features that drive Quai into the future.
+          </p>
+          <div class="text--primary"></div>
+        </v-card-text>
+      </div>
       <div class="quai-category-card card-color-1" style="width: 100%">
         <div class="floating-wolfram wolfram-bg-1"></div>
         <v-card-text>
@@ -84,7 +95,8 @@
   grid-template-columns: repeat(2, minmax(0px, 616px));
   grid-template-rows: repeat(5, minmax(0px, 300px));
   grid-auto-rows: 1fr;
-  gap: 2.5em;
+  column-gap: 5em;
+  row-gap: 2.5em;
 }
 
 .quai-category-card {
@@ -99,6 +111,21 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   height: 600px;
+}
+
+.features {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gradient-text-features {
+  background: linear-gradient(150deg, white, silver);
+  line-height: 5.5rem;
+  font-size: 4rem !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-color-1 {
@@ -215,43 +242,58 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Show in Large desktops and laptops */
-@media (min-width: 1200px) {
-  .landing-title {
-    font-size: 120px;
+@media (max-width: 700px) {
+  .quai-cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0px, 616px));
+    grid-template-rows: repeat(10, minmax(0px, 300px));
+    grid-auto-rows: 1fr;
+    gap: 2.5em;
   }
-  .landing-desc {
-    font-size: 24px;
+
+  .features {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
-}
 
-/*Hide in Other Small Devices */
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .landing-title {
-    font-size: 80px;
+  .card-color-1 {
+    -webkit-box-shadow: 0 0 20px#dda50a !important;
+    -moz-box-shadow: 0 0 20px #dda50a !important;
+    box-shadow: 0 0 20px #dda50a !important;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
   }
-}
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-  .landing-title {
-    font-size: 80px;
+  .card-color-2 {
+    -webkit-box-shadow: 0 0 20px #0addcb !important;
+    -moz-box-shadow: 0 0 20px #0addcb !important;
+    box-shadow: 0 0 20px #0addcb !important;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 6;
   }
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-  .landing-title {
-    font-size: 80px;
+  .card-color-3 {
+    -webkit-box-shadow: 0 0 20px #57dd0a !important;
+    -moz-box-shadow: 0 0 20px #57dd0a !important;
+    box-shadow: 0 0 20px #57dd0a !important;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 6;
+    grid-row-end: 8;
   }
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-  .landing-title {
-    font-size: 80px;
+  .card-color-4 {
+    -webkit-box-shadow: 0 0 20px #9a0add !important;
+    -moz-box-shadow: 0 0 20px #9a0add !important;
+    box-shadow: 0 0 20px #9a0add !important;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 8;
+    grid-row-end: 10;
   }
 }
 </style>

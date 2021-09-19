@@ -18,7 +18,7 @@
       <v-btn color="white" text rounded> Home </v-btn>
       <v-btn color="white" text rounded> News </v-btn>
       <v-btn color="white" text rounded> Developers </v-btn>
-      <v-btn v-if="this.now" style="position: absolute; right: 10px; top: 15px"
+      <v-btn v-if="this.now" class="countdown-btn"
         >Testnet Launch {{ display.days }} Days {{ display.hours }} Hours
         {{ display.seconds }} Seconds</v-btn
       >
@@ -69,4 +69,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.countdown-btn {
+  background-color: rgb(236, 77, 55, 0.5) !important;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+</style>

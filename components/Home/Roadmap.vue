@@ -22,17 +22,11 @@
             "
           >
             <v-card-text>
-              <p
-                class="text-h3 gradient-text-1"
-                style="font-size: 5 rem !important"
-              >
+              <p class="text-h3 gradient-text-1">
                 {{ item.title }}
               </p>
-              <div class="text--primary">
-                <pre
-                  style="font-family: Roboto, sans-serif; line-height: 1.5"
-                  >{{ item.description }}</pre
-                >
+              <div style="overflow-wrap: break-word; word-wrap: break-word">
+                {{ item.description }}
               </div>
             </v-card-text>
           </div>
@@ -123,8 +117,25 @@ export default {
   background: linear-gradient(120deg, #ec4d37ff, #ffa500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 5rem;
 }
+
 .v-timeline-item_body {
   width: 50px !important;
+}
+
+@media (max-width: 700px) {
+  .roadmap-card {
+    overflow: hidden;
+    border-radius: 25px;
+    width: 100% !important;
+    font-size: 30px;
+  }
+  .gradient-text-1 {
+    background: linear-gradient(120deg, #ec4d37ff, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px !important;
+  }
 }
 </style>

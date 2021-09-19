@@ -1,13 +1,13 @@
 <template>
-  <div style="overflow: hidden; width: 100%">
+  <div style="width: 100%; height: 100%">
     <v-container>
-      <v-row justify="center" align="center">
+      <v-row class="landing-row" justify="center" align="center">
         <v-row style="margin-top: 10%; width: 100%">
           <v-col cols="12" sm="8" md="7">
             <div class="landing-title">Redefining Money.</div>
           </v-col>
         </v-row>
-        <v-row style="width: 100%">
+        <v-row style="width: 100%; height: 100%">
           <v-col
             cols="12"
             sm="8"
@@ -19,15 +19,19 @@
             Mined blockchains.
           </v-col>
         </v-row>
-        <v-row style="width: 100px">
+        <v-row style="margin-top: 20px">
           <v-btn
             @click="openLink(buildLink)"
-            elevation="2"
+            class="landing-btn"
             raised
-            x-large
-            style="margin-right: 10px"
+            elevantion="2"
+            style="margin-right: 20px"
             >Start Building</v-btn
-          ><v-btn @click="openLink(docsLink)" elevation="2" raised x-large
+          ><v-btn
+            @click="openLink(docsLink)"
+            class="landing-btn"
+            raised
+            elevantion="2"
             >Read The Docs</v-btn
           >
         </v-row>
@@ -83,6 +87,10 @@ export default {
   height: 800px;
 }
 
+.landing-btn {
+  background-color: rgb(236, 77, 55, 0.5) !important;
+}
+
 /* Show in Large desktops and laptops */
 @media (min-width: 1200px) {
   .landing-title {
@@ -119,7 +127,15 @@ export default {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .landing-title {
-    font-size: 80px;
+    font-size: 75px;
+  }
+
+  .landing-desc {
+    font-size: 20px;
+  }
+
+  .landing-row {
+    margin: 10%;
   }
 }
 </style>
