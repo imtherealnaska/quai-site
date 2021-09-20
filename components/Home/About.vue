@@ -28,6 +28,8 @@
               muted
               autoplay
               loop
+              playsinline
+              defaultMuted
               style="max-width: 100%"
               id="video"
             >
@@ -85,7 +87,7 @@ export default {
   margin-right: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .about-container {
     margin: 5%;
   }

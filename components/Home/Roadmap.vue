@@ -7,6 +7,7 @@
           :key="i"
           :color="item.color"
           small
+          class="quai-timeline-item"
         >
           <template v-slot:opposite>
             <span
@@ -124,18 +125,77 @@ export default {
   width: 50px !important;
 }
 
-@media (max-width: 700px) {
+.v-timeline::before {
+  top: 55px;
+  height: calc(100% - 110px);
+}
+
+@media (max-width: 900px) {
   .roadmap-card {
     overflow: hidden;
     border-radius: 25px;
     width: 100% !important;
     font-size: 30px;
+    max-width: 100% !important;
+    margin-top: 30px;
   }
+
+  .v-timeline-item__body {
+    max-width: 400px !important;
+  }
+
   .gradient-text-1 {
     background: linear-gradient(120deg, #ec4d37ff, #ffa500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 25px !important;
+  }
+
+  .v-timeline-item {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(odd):not(.v-timeline-item--before),
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after {
+    flex-direction: column-reverse !important;
+  }
+
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(even):not(.v-timeline-item--before),
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after {
+    flex-direction: column-reverse !important;
+  }
+
+  >>> .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(odd):not(.v-timeline-item--before)
+    .v-timeline-item__body,
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after
+    .v-timeline-item__body {
+    max-width: calc(100% - 48px) !important;
+  }
+
+  >>> .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(even):not(.v-timeline-item--before)
+    .v-timeline-item__body,
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after
+    .v-timeline-item__body {
+    max-width: calc(100% - 48px) !important;
+  }
+
+  >>> .v-timeline-item__body {
+    width: 100% !important;
+  }
+
+  >>> .v-timeline::before {
+    height: 0;
   }
 }
 </style>

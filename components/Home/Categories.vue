@@ -234,7 +234,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .quai-cards {
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 616px));
@@ -251,7 +251,7 @@
   }
 
   .gradient-text-features {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
 
   .card-color-1 {

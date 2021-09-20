@@ -19,7 +19,7 @@
             Mined blockchains.
           </v-col>
         </v-row>
-        <v-row style="width: 100%; height: 100%">
+        <v-row class="landing-button-row" style="width: 100%; height: 100%">
           <v-btn
             @click="openLink(buildLink)"
             class="landing-btn"
@@ -35,7 +35,10 @@
             >Read The Docs</v-btn
           >
         </v-row>
-        <v-row style="margin-top: 40px; margin-bottom: 40px">
+        <v-row
+          class="landing-button-row"
+          style="margin-top: 40px; margin-bottom: 40px"
+        >
           <v-btn v-if="this.now" class="countdown-btn"
             >Testnet Launch {{ display.days }} Days {{ display.hours }} Hours
             {{ display.seconds }} Seconds</v-btn
@@ -195,6 +198,10 @@ export default {
 
   .landing-row {
     margin: 10%;
+  }
+
+  .v-btn {
+    font-size: 11px !important;
   }
 }
 </style>
