@@ -15,6 +15,27 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    __dangerouslyDisableSanitizers: ['script'],
+    script: [
+      {
+        hid: 'gtm-script1',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-G3NBQLK3HM',
+        async: true,
+        defer: true,
+      },
+      {
+        hid: 'gtm-script2',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-G3NBQLK3HM');
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -30,7 +51,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,10 +73,6 @@ export default {
         },
       },
     },
-  },
-
-  googleAnalytics: {
-    id: 'G-G3NBQLK3HM',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
