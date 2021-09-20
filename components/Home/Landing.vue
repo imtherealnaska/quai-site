@@ -14,9 +14,8 @@
             md="7"
             class="landing-desc"
             style="pointer-events: none"
-            >Supercharge your blockchain experience with Quai. Quai provides the
-            infrastructure for the future through a secure network of Merged
-            Mined blockchains.
+            >Quai is a scalable network of Merged
+            Mined blockchains enabling the future of digital money.
           </v-col>
         </v-row>
         <v-row class="landing-button-row" style="width: 100%; height: 100%">
