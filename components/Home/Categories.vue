@@ -14,10 +14,16 @@
         <v-card-text>
           <p class="text-h3 gradient-text-1">Hermes</p>
           <div class="text--primary">
-            Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is an Olympian deity in ancient
-            Greek religion and mythology. Hermes is considered the herald of the
-            gods.<br />
-            with Quai
+            Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is considered the herald of the
+            gods.<br /><br />
+            Hermes governs the co-ordination of the all of the blockchains in the
+            merged mined braid of blockchains that make up the Quai network.  She
+            allows the network to handle more then 100 times more transactions
+            then traditional single thread blockchains such as Bitcoin and Ethereum,
+            while still allowing the chains to easily interact and perform state
+            updates cross-chain in Layer 1.
+            
+
           </div>
         </v-card-text>
         <v-card-actions>
