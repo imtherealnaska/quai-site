@@ -1,6 +1,5 @@
 <template>
-  <div style="width: 100%; height: 100%; max-width: 100%; overflow-x: hidden">
-    <img class="wolfram-bg" alt="Wolfram Web" src="wolfram/wave.svg" />
+  <div style="width: 100%; height: 100%; overflow-x: hidden">
     <v-container>
       <v-row class="landing-row" justify="center" align="center">
         <v-row style="margin-top: 10%; width: 100%">
@@ -36,7 +35,7 @@
             >Read The Docs</v-btn
           >
         </v-row>
-        <v-row style="margin-top: 40px">
+        <v-row style="margin-top: 40px; margin-bottom: 40px">
           <v-btn v-if="this.now" class="countdown-btn"
             >Testnet Launch {{ display.days }} Days {{ display.hours }} Hours
             {{ display.seconds }} Seconds</v-btn
@@ -44,6 +43,7 @@
         </v-row>
       </v-row>
     </v-container>
+    <div class="mask" style="width: 100vw; height: 100vh"></div>
   </div>
 </template>
 
@@ -102,6 +102,10 @@ export default {
   background-color: rgb(236, 77, 55, 0.5) !important;
 }
 
+.landing-row {
+  height: 100%;
+}
+
 .landing-title {
   background: linear-gradient(120deg, #ec4d37ff, #ffa500);
   -webkit-background-clip: text;
@@ -111,21 +115,20 @@ export default {
   /* pointer-events: none; */
 }
 
-.wolfram-bg {
-  position: absolute;
-  /* background by SVGBackgrounds.com */
-  top: 0;
+.mask {
+  height: 100%;
+  background: transparent;
+  background-image: url('./static/wolfram/wave.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
+    80%,
     rgba(0, 0, 0, 1)
   );
-  /* pointer-events: none; */
-  display: block;
-  margin-left: 20%;
-  margin-right: auto;
-  height: 800px;
-  overflow: auto;
+  position: absolute;
+  top: 0;
 }
 
 .landing-btn {
@@ -169,6 +172,21 @@ export default {
 @media (max-width: 480px) {
   .landing-title {
     font-size: 65px;
+  }
+
+  .landing-desc {
+    font-size: 20px;
+  }
+
+  .landing-row {
+    margin: 10%;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 400px) {
+  .landing-title {
+    font-size: 55px;
   }
 
   .landing-desc {
