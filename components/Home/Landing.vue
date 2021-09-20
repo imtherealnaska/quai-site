@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%; height: 100%; max-width: 100%; overflow-x: hidden">
-    <!-- <img class="wolfram-bg" alt="Wolfram Web" src="wolfram/wave.svg" /> -->
+    <img class="wolfram-bg" alt="Wolfram Web" src="wolfram/wave.svg" />
     <v-container>
       <v-row class="landing-row" justify="center" align="center">
         <v-row style="margin-top: 10%; width: 100%">
