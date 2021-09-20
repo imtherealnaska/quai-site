@@ -1,5 +1,6 @@
 <template>
-  <div style="width: 100%; height: 100%">
+  <div style="width: 100%; height: 100%; max-width: 100%; overflow-x: hidden">
+    <!-- <img class="wolfram-bg" alt="Wolfram Web" src="wolfram/wave.svg" /> -->
     <v-container>
       <v-row class="landing-row" justify="center" align="center">
         <v-row style="margin-top: 10%; width: 100%">
@@ -19,7 +20,7 @@
             Mined blockchains.
           </v-col>
         </v-row>
-        <v-row style="margin-top: 20px">
+        <v-row style="width: 100%; height: 100%">
           <v-btn
             @click="openLink(buildLink)"
             class="landing-btn"
@@ -35,13 +36,14 @@
             >Read The Docs</v-btn
           >
         </v-row>
+        <v-row style="margin-top: 40px">
+          <v-btn v-if="this.now" class="countdown-btn"
+            >Testnet Launch {{ display.days }} Days {{ display.hours }} Hours
+            {{ display.seconds }} Seconds</v-btn
+          >
+        </v-row>
       </v-row>
     </v-container>
-    <img
-      class="center-wolfram wolfram-bg"
-      alt="Wolfram Web"
-      src="wolfram/wave.svg"
-    />
   </div>
 </template>
 
@@ -51,6 +53,9 @@ export default {
     return {
       buildLink: 'https://github.com/spruce-solutions',
       docsLink: 'https://app.gitbook.com/@quai/s/quai/',
+      now: null,
+      end: new Date('October 14, 2021 15:00:00'),
+      tick: null,
     }
   },
   methods: {
@@ -58,10 +63,45 @@ export default {
       window.open(link, '_blank')
     },
   },
+  watch: {
+    now() {
+      if (this.finished) {
+        clearInterval(this.tick)
+      }
+    },
+  },
+  computed: {
+    remaining() {
+      return this.end.diff(this.now).toObject()
+    },
+    display() {
+      var seconds = Math.floor((this.end - this.now) / 1000)
+      var minutes = Math.floor(seconds / 60)
+      var hours = Math.floor(minutes / 60)
+      var days = Math.floor(hours / 24)
+
+      hours = hours - days * 24
+      minutes = minutes - days * 24 * 60 - hours * 60
+      seconds = seconds - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60
+      return { days: days, hours: hours, seconds: seconds }
+    },
+    finished() {
+      return this.now >= this.end
+    },
+  },
+  mounted() {
+    this.tick = setInterval(() => {
+      this.now = new Date()
+    }, 1000)
+  },
 }
 </script>
 
 <style scoped>
+.countdown-btn {
+  background-color: rgb(236, 77, 55, 0.5) !important;
+}
+
 .landing-title {
   background: linear-gradient(120deg, #ec4d37ff, #ffa500);
   -webkit-background-clip: text;
@@ -85,6 +125,7 @@ export default {
   margin-left: 20%;
   margin-right: auto;
   height: 800px;
+  overflow: auto;
 }
 
 .landing-btn {
@@ -127,7 +168,7 @@ export default {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .landing-title {
-    font-size: 75px;
+    font-size: 65px;
   }
 
   .landing-desc {

@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%">
-    <v-container>
+    <v-container class="about-container">
       <v-row style="margin-top: 10%; width: 100%">
         <v-col cols="12" sm="6" md="6">
           <v-row style="font-size: 74px">
@@ -21,8 +21,20 @@
             favorite DeFi protocols or NFT projects is a breeze.
           </v-row>
         </v-col>
-        <v-col cols="12" sm="6" md="6">
-          <v-row style="font-size: 100px"> Animation goes here</v-row>
+        <v-col cols="12" sm="12" md="6">
+          <v-row style="font-size: 100px">
+            <video
+              class="animation"
+              muted
+              autoplay
+              loop
+              style="max-width: 100%"
+              id="video"
+            >
+              <source src="~/assets/animation.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -36,7 +48,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    var vid = document.getElementById('video')
+    vid.playbackRate = 1.4
+  },
+}
+</script>
+
 <style scoped>
+.animation {
+  margin: 25%;
+  width: 100%;
+  border-radius: 20px;
+}
+
 .about-text-1 {
   background: linear-gradient(120deg, yellow, #ffa500);
   -webkit-background-clip: text;
@@ -56,5 +83,30 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    margin: 5%;
+  }
+
+  .animation {
+    margin-top: 60px;
+    margin-left: 0;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .about-text-1 {
+    font-size: 60px;
+  }
+
+  .about-text-2 {
+    font-size: 60px;
+  }
+
+  .about-text-3 {
+    font-size: 60px;
+  }
 }
 </style>

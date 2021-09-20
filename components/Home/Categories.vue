@@ -3,10 +3,7 @@
     <div class="quai-cards">
       <div class="quai-category-card features" style="width: 100%">
         <v-card-text>
-          <p
-            class="text-h3 gradient-text-features"
-            style="font-size: 5 rem !important"
-          >
+          <p class="text-h3 gradient-text-features">
             Features that drive Quai into the future.
           </p>
           <div class="text--primary"></div>
@@ -15,12 +12,7 @@
       <div class="quai-category-card card-color-1" style="width: 100%">
         <div class="floating-wolfram wolfram-bg-1"></div>
         <v-card-text>
-          <p
-            class="text-h3 gradient-text-1"
-            style="font-size: 5 rem !important"
-          >
-            Hermes
-          </p>
+          <p class="text-h3 gradient-text-1">Hermes</p>
           <div class="text--primary">
             Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is an Olympian deity in ancient
             Greek religion and mythology. Hermes is considered the herald of the
@@ -256,6 +248,10 @@
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  .gradient-text-features {
+    font-size: 3rem !important;
   }
 
   .card-color-1 {
