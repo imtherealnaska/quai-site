@@ -38,8 +38,20 @@ export default {
     ],
   },
 
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop,
+          behavior: 'smooth',
+        })
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    },
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/app.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

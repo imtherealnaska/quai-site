@@ -5,10 +5,16 @@
         <v-row>
           <v-col v-for="(list, i) in lists" :key="i">
             <v-row v-for="item in list" :key="item.title">
-              <v-btn color="white" text rounded class="my-2">
+              <v-btn
+                @click="openLink(item.link)"
+                color="white"
+                text
+                rounded
+                class="my-2"
+              >
                 <v-col class="footer-column"
                   >{{ item.title }}
-                  <!-- <p style="font-size: 12px">{{ item.desc }}</p> -->
+                  <!-- <p style="font-size: 12px">{{ item.link }}</p> -->
                 </v-col>
               </v-btn>
             </v-row>
@@ -25,23 +31,28 @@ export default {
   data: () => ({
     lists: [
       [
-        { title: 'FAQs', desc: 'Got a burning question?' },
-        { title: 'Wallet Setup', desc: 'Receive and use Quai' },
-        { title: 'Developer Docs', desc: 'Start building on Quai' },
-        { title: 'Block Explorer', desc: 'Coming soon' },
-        { title: 'Network Analyzer', desc: 'Coming soon' },
+        { title: 'FAQs', link: '' },
+        { title: 'Wallet Setup', link: '' },
+        { title: 'Developer Docs', link: '' },
+        { title: 'Block Explorer', link: '' },
+        { title: 'Network Analyzer', link: '' },
       ],
       [
-        { title: 'Mission', desc: 'Why was Quai built?' },
-        { title: 'Careers', desc: 'Join our team' },
+        { title: 'Mission', link: '' },
+        { title: 'Careers', link: '' },
       ],
       [
-        { title: 'Twitter', desc: 'Slide into our DMs' },
-        { title: 'Discord', desc: 'Chat with our devs' },
-        { title: 'Medium', desc: 'Read more about Quai' },
+        { title: 'Twitter', link: 'https://twitter.com/QuaiNetwork' },
+        { title: 'Discord', link: 'https://discord.gg/p6BKANkYhh' },
+        { title: 'Medium', link: '' },
       ],
     ],
   }),
+  methods: {
+    openLink(link) {
+      window.open(link, '_blank')
+    },
+  },
 }
 </script>
 

@@ -130,6 +130,22 @@ export default {
   height: calc(100% - 110px);
 }
 
+>>> ..v-timeline-item {
+  justify-content: flex-end !important;
+}
+
+>>> .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+  .v-timeline-item:nth-child(even):not(.v-timeline-item--before)
+  .v-timeline-item__body,
+.v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+  .v-timeline-item--after
+  .v-timeline-item__body {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  margin-left: auto;
+}
+
 @media (max-width: 900px) {
   .roadmap-card {
     overflow: hidden;

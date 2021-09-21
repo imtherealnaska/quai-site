@@ -1,9 +1,10 @@
 <template>
   <div style="height: 100%; overflow-y: scoll">
-    <HomeLanding />
-    <HomeCategories style="margin-top: 30vh" />
-    <HomeAbout style="margin-top: 20vh" />
-    <HomeRoadmap style="margin-top: 20vh; margin-bottom: 20vh" />
+    <div class="mask" style="width: 100vw; height: 100vh"></div>
+    <HomeLanding id="home" style="margin-top: 4vh" />
+    <HomeCategories id="features" style="margin-top: 34vh" />
+    <HomeAbout id="about" style="margin-top: 20vh" />
+    <HomeRoadmap id="roadmap" style="margin-top: 20vh; margin-bottom: 20vh" />
   </div>
 </template>
 
@@ -30,4 +31,20 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.mask {
+  height: 100%;
+  background: transparent;
+  background-image: url('./static/wolfram/wave.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    60%,
+    rgba(0, 0, 0, 1)
+  );
+  position: absolute;
+  top: 0;
+}
+</style>

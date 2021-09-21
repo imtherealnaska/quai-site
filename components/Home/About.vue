@@ -61,7 +61,7 @@ export default {
 
 <style scoped>
 .animation {
-  margin: 25%;
+  margin: 20%;
   width: 100%;
   border-radius: 20px;
 }

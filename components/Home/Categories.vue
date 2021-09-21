@@ -9,21 +9,30 @@
           <div class="text--primary"></div>
         </v-card-text>
       </div>
-      <div class="quai-category-card card-color-1" style="width: 100%">
-        <div class="floating-wolfram wolfram-bg-1"></div>
-        <v-card-text>
+
+      <div id="card1" class="quai-category-card card-color-1">
+        <div
+          class="floating-wolfram wolfram-bg-1"
+          v-bind:class="[cardOneActive ? 'mobile-scroll-hover ' : '']"
+        ></div>
+        <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-1">Hermes</p>
           <div class="text--primary">
             Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is considered the herald of the
             gods.<br /><br />
-            Hermes governs the co-ordination of the all of the blockchains in the
-            merged mined braid of blockchains that make up the Quai network.  She
-            allows the network to handle more then 100 times more transactions
-            then traditional single thread blockchains such as Bitcoin and Ethereum,
-            while still allowing the chains to easily interact and perform state
-            updates cross-chain in Layer 1.
-            
-
+          </div>
+          <HelpersIntersectionObserver
+            sentinal-name="card-1"
+            @on-intersection-element="onIntersectionElement"
+          >
+          </HelpersIntersectionObserver>
+          <div class="body-text-desc">
+            Hermes governs the co-ordination of the all of the blockchains in
+            the merged mined braid of blockchains that make up the Quai network.
+            She allows the network to handle more then 100 times more
+            transactions then traditional single thread blockchains such as
+            Bitcoin and Ethereum, while still allowing the chains to easily
+            interact and perform state updates cross-chain in Layer 1.
           </div>
         </v-card-text>
         <v-card-actions>
@@ -32,41 +41,88 @@
           </v-btn>
         </v-card-actions>
       </div>
-      <div style="height: 300px"></div>
-      <div class="quai-category-card card-color-3">
-        <div class="floating-wolfram wolfram-bg-3"></div>
-        <v-card-text>
+      <div id="card3" class="quai-category-card card-color-3">
+        <div
+          class="floating-wolfram wolfram-bg-3"
+          v-bind:class="[cardTwoActive ? 'mobile-scroll-hover ' : '']"
+        ></div>
+        <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-2">Janus</p>
           <div class="text--primary">
             Janus (/ˈdʒeɪnəs/ JAY-nəs; Latin: Iānus) is the god of beginnings,
             gates, transitions, time, duality, doorways,[1] passages, frames,
-            and endings.
+            and endings.<br /><br />
+          </div>
+          <HelpersIntersectionObserver
+            sentinal-name="card-2"
+            @on-intersection-element="onIntersectionElement"
+          >
+          </HelpersIntersectionObserver>
+          <div class="body-text-desc">
+            Hermes governs the co-ordination of the all of the blockchains in
+            the merged mined braid of blockchains that make up the Quai network.
+            She allows the network to handle more then 100 times more
+            transactions then traditional single thread blockchains such as
+            Bitcoin and Ethereum, while still allowing the chains to easily
+            interact and perform state updates cross-chain in Layer 1.
           </div>
         </v-card-text>
         <v-card-actions>
           <v-btn text color="#57dd0a"> Learn More </v-btn>
         </v-card-actions>
       </div>
-      <div class="quai-category-card card-color-2">
-        <div class="floating-wolfram wolfram-bg-2"></div>
-        <v-card-text>
+      <div id="card2" class="quai-category-card card-color-2">
+        <div
+          class="floating-wolfram wolfram-bg-2"
+          v-bind:class="[cardThreeActive ? 'mobile-scroll-hover ' : '']"
+        ></div>
+        <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-3">Plutus</p>
           <div class="text--primary">
             Plutus (/ˈpluːtəs/; Greek: Πλοῦτος, translit. Ploûtos, lit.
-            "wealth") is the Greek god of wealth.
+            "wealth") is the Greek god of wealth.<br /><br />
+          </div>
+          <HelpersIntersectionObserver
+            sentinal-name="card-3"
+            @on-intersection-element="onIntersectionElement"
+          >
+          </HelpersIntersectionObserver>
+          <div class="body-text-desc">
+            Hermes governs the co-ordination of the all of the blockchains in
+            the merged mined braid of blockchains that make up the Quai network.
+            She allows the network to handle more then 100 times more
+            transactions then traditional single thread blockchains such as
+            Bitcoin and Ethereum, while still allowing the chains to easily
+            interact and perform state updates cross-chain in Layer 1.
           </div>
         </v-card-text>
         <v-card-actions>
           <v-btn text color="#0addcb"> Learn More </v-btn>
         </v-card-actions>
       </div>
-      <div class="quai-category-card card-color-4">
-        <div class="floating-wolfram wolfram-bg-4"></div>
-        <v-card-text>
+      <div id="card4" class="quai-category-card card-color-4">
+        <div
+          class="floating-wolfram wolfram-bg-4"
+          v-bind:class="[cardFourActive ? 'mobile-scroll-hover ' : '']"
+        ></div>
+        <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-4">Ares</p>
           <div class="text--primary">
             Ares (/ˈɛəriːz/; Ancient Greek: Ἄρης) is the Greek god of courage
-            and war.<br />
+            and war.<br /><br />
+          </div>
+          <HelpersIntersectionObserver
+            sentinal-name="card-4"
+            @on-intersection-element="onIntersectionElement"
+          >
+          </HelpersIntersectionObserver>
+          <div class="body-text-desc">
+            Hermes governs the co-ordination of the all of the blockchains in
+            the merged mined braid of blockchains that make up the Quai network.
+            She allows the network to handle more then 100 times more
+            transactions then traditional single thread blockchains such as
+            Bitcoin and Ethereum, while still allowing the chains to easily
+            interact and perform state updates cross-chain in Layer 1.
           </div>
         </v-card-text>
         <v-card-actions>
@@ -77,6 +133,36 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      cardOneActive: false,
+      cardTwoActive: false,
+      cardThreeActive: false,
+      cardFourActive: false,
+    }
+  },
+  methods: {
+    onIntersectionElement(data) {
+      console.log(data)
+      if (data.name == 'card-1') {
+        this.cardOneActive = data.intersect
+      }
+      if (data.name == 'card-2') {
+        this.cardTwoActive = data.intersect
+      }
+      if (data.name == 'card-3') {
+        this.cardThreeActive = data.intersect
+      }
+      if (data.name == 'card-4') {
+        this.cardFourActive = data.intersect
+      }
+    },
+  },
+}
+</script>
+
 <style scoped>
 .quai-cards-wrapper {
   display: flex;
@@ -84,8 +170,9 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  margin-bottom: 7em;
   padding: 0px 2em;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .quai-cards {
@@ -118,12 +205,18 @@
   grid-row-end: 3;
 }
 
+.body-text-desc {
+  font-size: 20px !important;
+  pointer-events: none;
+}
+
 .gradient-text-features {
   background: linear-gradient(150deg, white, silver);
   line-height: 5.5rem;
   font-size: 4rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .card-color-1 {
@@ -134,6 +227,34 @@
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 3;
+}
+
+#card1:hover > .wolfram-bg-1 {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#card2:hover > .wolfram-bg-2 {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#card3:hover > .wolfram-bg-3 {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#card4:hover > .wolfram-bg-4 {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .card-color-2 {
@@ -186,14 +307,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.floating-wolfram:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  rotation: 0.01; /* add to force matrix3d() */
-}
-
 .wolfram-bg-1 {
   background-image: url('./static/wolfram/mesh.png');
 }
@@ -214,6 +327,7 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .gradient-text-2 {
@@ -222,6 +336,7 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .gradient-text-3 {
@@ -230,6 +345,7 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .gradient-text-4 {
@@ -238,15 +354,27 @@
   font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 @media (max-width: 900px) {
   .quai-cards {
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 616px));
-    grid-template-rows: repeat(10, minmax(0px, 300px));
+    grid-template-rows: repeat(10, minmax(0px, 250px));
     grid-auto-rows: 1fr;
     gap: 2.5em;
+  }
+
+  .quai-category-card {
+    height: 500px;
+  }
+
+  .mobile-scroll-hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   .features {
@@ -256,8 +384,11 @@
     grid-row-end: 2;
   }
 
+  .body-text-desc {
+    font-size: 14px !important;
+  }
   .gradient-text-features {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
 
   .card-color-1 {

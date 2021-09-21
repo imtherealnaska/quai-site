@@ -27,8 +27,8 @@ export default {
       { icon: 'mdi-discord', link: 'https://discord.gg/p6BKANkYhh' },
       { icon: 'mdi-github', link: ' ' },
       { icon: 'mdi-twitter', link: 'https://twitter.com/QuaiNetwork' },
-      { icon: 'mdi-linkedin', link: ' ' },
-      { icon: 'mdi-instagram', link: ' ' },
+      { icon: 'mdi-medium', link: ' ' },
+      // { icon: 'mdi-instagram', link: ' ' },
     ],
   }),
   methods: {

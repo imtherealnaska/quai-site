@@ -2,51 +2,41 @@
   <div style="width: 100%; height: 100%; overflow-x: hidden">
     <v-container>
       <v-row class="landing-row" justify="center" align="center">
-        <v-row style="margin-top: 10%; width: 100%">
-          <v-col cols="12" sm="8" md="7">
+        <v-col cols="12" sm="8" md="7">
+          <v-row style="margin-top: 10%; width: 100%">
             <div class="landing-title">Redefining Money.</div>
-          </v-col>
-        </v-row>
-        <v-row style="width: 100%; height: 100%">
-          <v-col
-            cols="12"
-            sm="8"
-            md="7"
-            class="landing-desc"
-            style="pointer-events: none"
-            >Supercharge your blockchain experience with Quai. Quai provides the
+          </v-row>
+          <v-row class="landing-desc" style="width: 100%; height: 100%">
+            Supercharge your blockchain experience with Quai. Quai provides the
             infrastructure for the future through a secure network of Merged
             Mined blockchains.
-          </v-col>
-        </v-row>
-        <v-row class="landing-button-row" style="width: 100%; height: 100%">
-          <v-btn
-            @click="openLink(buildLink)"
-            class="landing-btn"
-            raised
-            elevantion="2"
-            style="margin-right: 20px"
-            >Start Building</v-btn
-          ><v-btn
-            @click="openLink(docsLink)"
-            class="landing-btn"
-            raised
-            elevantion="2"
-            >Read The Docs</v-btn
-          >
-        </v-row>
-        <v-row
-          class="landing-button-row"
-          style="margin-top: 40px; margin-bottom: 40px"
-        >
-          <v-btn v-if="this.now" class="countdown-btn"
-            >Testnet Launch {{ display.days }} Days {{ display.hours }} Hours
-            {{ display.seconds }} Seconds</v-btn
-          >
-        </v-row>
+          </v-row>
+          <v-row class="landing-btn-row">
+            <v-btn
+              @click="openLink(buildLink)"
+              class="landing-btn"
+              raised
+              elevantion="2"
+              style="margin-right: 20px"
+              >Start Building</v-btn
+            ><v-btn
+              @click="openLink(docsLink)"
+              class="landing-btn"
+              raised
+              elevantion="2"
+              >Read The Docs</v-btn
+            >
+          </v-row>
+        </v-col>
+        <v-col v-if="this.now" class="countdown-col">
+          <v-row class="countdown-title">Testnet Launch</v-row>
+          <v-row class="countdown-nums">
+            {{ display.days }} Days {{ display.hours }} Hours
+            {{ display.seconds }} Seconds
+          </v-row>
+        </v-col>
       </v-row>
     </v-container>
-    <div class="mask" style="width: 100vw; height: 100vh"></div>
   </div>
 </template>
 
@@ -101,11 +91,32 @@ export default {
 </script>
 
 <style scoped>
-.countdown-btn {
-  background-color: rgb(236, 77, 55, 0.5) !important;
+.countdown-col {
+  justify-content: center;
+}
+
+.countdown-title {
+  font-size: 64px;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+}
+
+.countdown-nums {
+  font-size: 36px;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
 }
 
 .landing-row {
+  height: 100%;
+}
+
+.landing-btn-row {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
   height: 100%;
 }
 
@@ -115,27 +126,15 @@ export default {
   -webkit-text-fill-color: transparent;
   opacity: 2 !important;
   color: rgba(255, 255, 255, 1) !important;
-  /* pointer-events: none; */
+  position: relative;
 }
 
-.mask {
-  height: 100%;
-  background: transparent;
-  background-image: url('./static/wolfram/wave.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    80%,
-    rgba(0, 0, 0, 1)
-  );
-  position: absolute;
-  top: 0;
+.landing-desc {
+  position: relative;
 }
 
 .landing-btn {
-  background-color: rgb(236, 77, 55, 0.5) !important;
+  background-color: rgb(236, 77, 55, 0.9) !important;
 }
 
 /* Show in Large desktops and laptops */
