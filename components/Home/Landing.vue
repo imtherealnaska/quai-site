@@ -241,5 +241,13 @@ export default {
   .countdown-btn {
     font-size: 14px;
   }
+
+  .countdown-title {
+    font-size: 32px;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    margin: 0 auto;
+  }
 }
 </style>
