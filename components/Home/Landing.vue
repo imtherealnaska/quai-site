@@ -7,9 +7,9 @@
             <div class="landing-title">Redefining Money.</div>
           </v-row>
           <v-row class="landing-desc" style="width: 100%; height: 100%">
-            Supercharge your blockchain experience with Quai. Quai provides the
-            infrastructure for the future through a secure network of Merged
-            Mined blockchains.
+            Supercharge your blockchain experience with Quai. Quai is a scalable
+            network of Merged Mined blockchains enabling the future of digital
+            money.
           </v-row>
           <v-row class="landing-btn-row">
             <v-btn

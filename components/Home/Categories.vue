@@ -4,7 +4,7 @@
       <div class="quai-category-card features" style="width: 100%">
         <v-card-text>
           <p class="text-h3 gradient-text-features">
-            Features that drive Quai into the future.
+            Features that drive Quai.
           </p>
           <div class="text--primary"></div>
         </v-card-text>
@@ -32,7 +32,16 @@
             She allows the network to handle more then 100 times more
             transactions then traditional single thread blockchains such as
             Bitcoin and Ethereum, while still allowing the chains to easily
-            interact and perform state updates cross-chain in Layer 1.
+            interact and perform state updates cross-chain in Layer 1. =======
+            Hermes governs the co-ordination of the all of the blockchains in
+            the merged mined braid of Proof-of-Work (PoW) blockchains that make
+            up the Quai network. She allows the network to handle more then 100
+            times more transactions then traditional single-thread blockchains
+            such as Bitcoin and Ethereum, while still allowing the chains to
+            easily interact and perform transactions cross-chain intra-network
+            in Layer 1. Hermes primarily employs the hierarchical longest chain
+            rule as well as synchronous blocks to allow the deterministic and
+            atomic propogation of cross-chain transitions.
           </div>
         </v-card-text>
         <v-card-actions>
@@ -59,12 +68,11 @@
           >
           </HelpersIntersectionObserver>
           <div class="body-text-desc">
-            Hermes governs the co-ordination of the all of the blockchains in
-            the merged mined braid of blockchains that make up the Quai network.
-            She allows the network to handle more then 100 times more
-            transactions then traditional single thread blockchains such as
-            Bitcoin and Ethereum, while still allowing the chains to easily
-            interact and perform state updates cross-chain in Layer 1.
+            Janus governs the interfaces between the Quai Network and existing
+            blockchains. He is able to incentivize merge mining of the Quai's
+            PRIME blockchain by other networks which can then be used to make
+            trustless bridgeless transactions possible. Janus controls which
+            blockchains are trustlessly linked to the Quai Network.
           </div>
         </v-card-text>
         <v-card-actions>
@@ -88,12 +96,14 @@
           >
           </HelpersIntersectionObserver>
           <div class="body-text-desc">
-            Hermes governs the co-ordination of the all of the blockchains in
-            the merged mined braid of blockchains that make up the Quai network.
-            She allows the network to handle more then 100 times more
-            transactions then traditional single thread blockchains such as
-            Bitcoin and Ethereum, while still allowing the chains to easily
-            interact and perform state updates cross-chain in Layer 1.
+            Plutus governs the monetary policy of the Quai Network. He manages
+            the supply of Quai tokens to adequately incentive miners to dedicate
+            sufficient computing resources to provide only the amount of
+            security needed by the network. Plutus will initially create an
+            inflationary token supply, but will ultimately make the Quai token
+            supply as deflationary as possible. Additionally, Plutus uses
+            bonding rewards to stabalize the market price of the Quai token
+            making it less volatile and more useful for transactions.
           </div>
         </v-card-text>
         <v-card-actions>
@@ -117,12 +127,13 @@
           >
           </HelpersIntersectionObserver>
           <div class="body-text-desc">
-            Hermes governs the co-ordination of the all of the blockchains in
-            the merged mined braid of blockchains that make up the Quai network.
-            She allows the network to handle more then 100 times more
-            transactions then traditional single thread blockchains such as
-            Bitcoin and Ethereum, while still allowing the chains to easily
-            interact and perform state updates cross-chain in Layer 1.
+            Ares governs the incetives for defecting from traditional networks
+            and using the Quai Network. Ares has incentives for individuals,
+            developers, companies, central banks, and nation states to adopt the
+            Quai Network. Many of these incentives are structured with geometric
+            payouts which provide greater rewards to the first adopters in each
+            category. Additionally, Ares may from time-to-time deploy high value
+            incentives which may disrupt the operation of competing blockchains.
           </div>
         </v-card-text>
         <v-card-actions>
