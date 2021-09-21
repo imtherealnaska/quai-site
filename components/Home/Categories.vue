@@ -28,12 +28,6 @@
           </HelpersIntersectionObserver>
           <div class="body-text-desc">
             Hermes governs the co-ordination of the all of the blockchains in
-            the merged mined braid of blockchains that make up the Quai network.
-            She allows the network to handle more then 100 times more
-            transactions then traditional single thread blockchains such as
-            Bitcoin and Ethereum, while still allowing the chains to easily
-            interact and perform state updates cross-chain in Layer 1. =======
-            Hermes governs the co-ordination of the all of the blockchains in
             the merged mined braid of Proof-of-Work (PoW) blockchains that make
             up the Quai network. She allows the network to handle more then 100
             times more transactions then traditional single-thread blockchains
