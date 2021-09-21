@@ -33,3 +33,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+>>> .v-expansion-panel-header {
+  background-color: rgb(236, 77, 55, 0.3) !important;
+}
+
+.theme--dark.v-expansion-panels .v-expansion-panel {
+  background-color: rgb(236, 77, 55, 0.3) !important;
+}
+
+.v-expansion-panel-content__wrap {
+}
+</style>

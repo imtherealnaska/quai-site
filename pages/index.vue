@@ -53,9 +53,9 @@ export default {
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 768px) {
   .index-spacing {
-    margin-top: 15vh;
+    margin-top: 12vh;
   }
 }
 </style>

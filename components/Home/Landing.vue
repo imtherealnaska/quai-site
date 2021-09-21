@@ -248,6 +248,10 @@ export default {
     text-align: center;
     font-weight: 300;
     margin: 0 auto;
+    pointer-events: none;
+    background: linear-gradient(120deg, #ffa600, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 </style>

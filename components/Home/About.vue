@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%">
-    <v-container class="about-container">
-      <v-row style="width: 100%">
+    <v-container>
+      <v-row class="about-container" style="width: 100%">
         <v-col cols="12" sm="6" md="6">
           <v-row style="font-size: 74px">
             <div class="about-text-1">Fast.</div>
@@ -12,7 +12,7 @@
           <v-row style="font-size: 74px">
             <div class="about-text-3">Decentralized.</div>
           </v-row>
-          <v-row style="font-size: 24px"
+          <v-row class="about-desc"
             >The creators of Quai believe in a future where Proof of Work is
             scalable. That is why Quai is built with a multi-chain approach to
             scalability. Quai’s unique network of blockchains allows for
@@ -89,29 +89,37 @@ export default {
   margin-right: 20px;
 }
 
+.about-desc {
+  font-size: 24px;
+}
+
 @media (max-width: 900px) {
   .about-container {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .animation {
     margin-top: 60px;
     margin-left: 0;
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
   }
 
   .about-text-1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .about-text-2 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .about-text-3 {
-    font-size: 60px;
+    font-size: 40px;
+  }
+
+  .about-desc {
+    font-size: 14px;
   }
 }
 </style>

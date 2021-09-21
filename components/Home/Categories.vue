@@ -364,7 +364,7 @@ export default {
   .quai-cards {
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 616px));
-    grid-template-rows: repeat(10, minmax(0px, 275px));
+    grid-template-rows: repeat(9, minmax(0px, 275px));
     grid-auto-rows: 1fr;
     gap: 2.5em;
   }
