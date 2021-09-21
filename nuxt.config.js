@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import redirectSSL from 'redirect-ssl'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -38,17 +39,22 @@ export default {
     ],
   },
 
-  // router: {
-  //   scrollBehavior(to) {
-  //     if (to.hash) {
-  //       return window.scrollTo({
-  //         top: document.querySelector(to.hash).offsetTop,
-  //         behavior: 'smooth',
-  //       })
-  //     }
-  //     return window.scrollTo({ top: 0, behavior: 'smooth' })
-  //   },
-  // },
+  // Set middleware to redirect to SSL on prod
+  serverMiddleware: [
+    redirectSSL.create({ enabled: process.env.NODE_ENV === 'production' }),
+  ],
+
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop,
+          behavior: 'smooth',
+        })
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    },
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/app.scss'],
