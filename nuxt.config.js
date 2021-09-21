@@ -41,7 +41,7 @@ export default {
 
   // Set middleware to redirect to SSL on prod
   serverMiddleware: [
-    redirectSSL.create({ enabled: process.env.NODE_ENV === 'production' }),
+    redirectSSL.create({ enabled: process.env.VERIFY_SSL === 'verify' }),
   ],
 
   router: {
