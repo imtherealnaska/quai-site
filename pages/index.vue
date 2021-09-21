@@ -2,9 +2,9 @@
   <div style="height: 100%; overflow-y: scoll">
     <div class="mask" style="width: 100vw; height: 100vh"></div>
     <HomeLanding id="home" style="margin-top: 4vh" />
-    <HomeCategories id="features" style="margin-top: 34vh" />
-    <HomeAbout id="about" style="margin-top: 20vh" />
-    <HomeRoadmap id="roadmap" style="margin-top: 20vh; margin-bottom: 20vh" />
+    <HomeCategories id="features" class="index-spacing" />
+    <HomeAbout id="about" class="index-spacing" />
+    <HomeRoadmap id="roadmap" class="index-spacing" />
   </div>
 </template>
 
@@ -46,5 +46,16 @@ export default {
   );
   position: absolute;
   top: 0;
+}
+
+.index-spacing {
+  margin-top: 34vh;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .index-spacing {
+    margin-top: 15vh;
+  }
 }
 </style>

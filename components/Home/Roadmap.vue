@@ -130,7 +130,7 @@ export default {
   height: calc(100% - 110px);
 }
 
->>> ..v-timeline-item {
+>>> .v-timeline-item {
   justify-content: flex-end !important;
 }
 
@@ -143,7 +143,6 @@ export default {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  margin-left: auto;
 }
 
 @media (max-width: 900px) {
@@ -172,6 +171,7 @@ export default {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    margin: 0 auto;
   }
 
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)

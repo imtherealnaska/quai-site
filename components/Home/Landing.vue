@@ -7,9 +7,8 @@
             <div class="landing-title">Redefining Money.</div>
           </v-row>
           <v-row class="landing-desc" style="width: 100%; height: 100%">
-            Supercharge your blockchain experience with Quai. Quai is a scalable
-            network of Merged Mined blockchains enabling the future of digital
-            money.
+            Quai is a scalable network of Merged Mined blockchains enabling fast
+            and inexpensive decentralized finance.
           </v-row>
           <v-row class="landing-btn-row">
             <v-btn
@@ -51,7 +50,7 @@ export default {
   data() {
     return {
       buildLink: 'https://github.com/spruce-solutions',
-      docsLink: 'https://app.gitbook.com/@quai/s/quai/',
+      docsLink: 'https://docs.quai.network/',
       now: null,
       end: new Date('October 14, 2021 15:00:00'),
       tick: null,
@@ -99,6 +98,8 @@ export default {
 <style scoped>
 .countdown-col {
   justify-content: center;
+  margin: 0 auto;
+  max-width: max-content;
 }
 
 .countdown-title {
@@ -108,6 +109,9 @@ export default {
   font-weight: 600;
   pointer-events: none;
   margin: 0 auto;
+  background: linear-gradient(120deg, #ffa600, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .countdown-nums {
@@ -118,7 +122,8 @@ export default {
 }
 
 .countdown-btn {
-  background: linear-gradient(120deg, rgba(255, 255, 0, 0.7), #ffa600);
+  background-color: rgb(236, 77, 55, 0.9) !important;
+  /* background: linear-gradient(120deg, #ffa600, white); */
   font-size: 22px;
   margin: 0 auto;
   width: 100%;
@@ -178,12 +183,20 @@ export default {
   .landing-title {
     font-size: 80px;
   }
+
+  .countdown-btn {
+    font-size: 22px;
+  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .landing-title {
     font-size: 80px;
+  }
+
+  .countdown-btn {
+    font-size: 22px;
   }
 }
 
@@ -200,10 +213,14 @@ export default {
   .landing-row {
     margin: 10%;
   }
+
+  .countdown-btn {
+    font-size: 22px;
+  }
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .landing-title {
     font-size: 55px;
   }
@@ -217,7 +234,12 @@ export default {
   }
 
   .v-btn {
-    font-size: 11px !important;
+    font-size: 10px !important;
+    padding: 0 10px !important;
+  }
+
+  .countdown-btn {
+    font-size: 14px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark padless style="height: 100%">
+  <v-footer dark padless style="height: 100%; margin-top: 10%">
     <v-card flat tile class="footer-card lighten-1 white--text text-center">
       <v-card-text class="white--text pt-0">
         <v-row>
@@ -35,7 +35,7 @@ export default {
         { title: 'Wallet Setup', link: '' },
         {
           title: 'Developer Docs',
-          link: 'https://app.gitbook.com/@quai/s/quai/',
+          link: 'https://docs.quai.network/',
         },
         { title: 'Block Explorer', link: '' },
         { title: 'Network Analyzer', link: '' },

@@ -5,7 +5,7 @@
     app
     style="background-color: rgba(0, 0, 0, 0.2); max-width: 100vw !important"
   >
-    <LogosQuaiRound />
+    <LogosQuaiRound style="cursor: pointer" />
     <div
       style="
         margin-left: 24%;
@@ -63,7 +63,7 @@
         color="white"
         text
         rounded
-        @click="openLink('https://app.gitbook.com/@quai/s/quai/')"
+        @click="openLink('https://docs.quai.network/')"
       >
         Developers
       </v-btn>

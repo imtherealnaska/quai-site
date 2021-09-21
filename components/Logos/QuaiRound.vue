@@ -1,6 +1,21 @@
 <template>
-  <img class="quai-logo" alt="Quai Logo" src="/quai-rounded-logo.svg" />
+  <img
+    @click="clickedLogo"
+    class="quai-logo"
+    alt="Quai Logo"
+    src="/quai-rounded-logo.svg"
+  />
 </template>
+
+<script>
+export default {
+  methods: {
+    clickedLogo() {
+      this.$router.replace('/')
+    },
+  },
+}
+</script>
 
 <style scoped>
 .quai-logo {

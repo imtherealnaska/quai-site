@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%">
     <v-container class="about-container">
-      <v-row style="margin-top: 10%; width: 100%">
+      <v-row style="width: 100%">
         <v-col cols="12" sm="6" md="6">
           <v-row style="font-size: 74px">
             <div class="about-text-1">Fast.</div>
@@ -91,7 +91,8 @@ export default {
 
 @media (max-width: 900px) {
   .about-container {
-    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .animation {

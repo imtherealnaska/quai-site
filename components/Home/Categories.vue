@@ -16,7 +16,7 @@
           v-bind:class="[cardOneActive ? 'mobile-scroll-hover ' : '']"
         ></div>
         <v-card-text style="position: relative">
-          <p class="text-h3 gradient-text-1">Hermes</p>
+          <p class="text-h3 gradient-text gradient-text-1">Hermes</p>
           <div class="text--primary" style="pointer-events: none">
             Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is considered the herald of the
             gods.<br /><br />
@@ -46,11 +46,12 @@
       </div>
       <div id="card3" class="quai-category-card card-color-3">
         <div
+          id="janusBg"
           class="floating-wolfram wolfram-bg-3"
           v-bind:class="[cardTwoActive ? 'mobile-scroll-hover ' : '']"
         ></div>
         <v-card-text style="position: relative">
-          <p class="text-h3 gradient-text-2">Janus</p>
+          <p class="text-h3 gradient-text gradient-text-2">Janus</p>
           <div class="text--primary" style="pointer-events: none">
             Janus (/ˈdʒeɪnəs/ JAY-nəs; Latin: Iānus) is the god of beginnings,
             gates, transitions, time, duality, doorways,[1] passages, frames,
@@ -79,7 +80,7 @@
           v-bind:class="[cardThreeActive ? 'mobile-scroll-hover ' : '']"
         ></div>
         <v-card-text style="position: relative">
-          <p class="text-h3 gradient-text-3">Plutus</p>
+          <p class="text-h3 gradient-text gradient-text-3">Plutus</p>
           <div class="text--primary" style="pointer-events: none">
             Plutus (/ˈpluːtəs/; Greek: Πλοῦτος, translit. Ploûtos, lit.
             "wealth") is the Greek god of wealth.<br /><br />
@@ -110,7 +111,7 @@
           v-bind:class="[cardFourActive ? 'mobile-scroll-hover ' : '']"
         ></div>
         <v-card-text style="position: relative">
-          <p class="text-h3 gradient-text-4">Ares</p>
+          <p class="text-h3 gradient-text gradient-text-4">Ares</p>
           <div class="text--primary" style="pointer-events: none">
             Ares (/ˈɛəriːz/; Ancient Greek: Ἄρης) is the Greek god of courage
             and war.<br /><br />
@@ -217,7 +218,7 @@ export default {
 .gradient-text-features {
   background: linear-gradient(150deg, white, silver);
   line-height: 5.5rem;
-  font-size: 4rem !important;
+  font-size: 4.5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   pointer-events: none;
@@ -325,53 +326,51 @@ export default {
   background-image: url('./static/wolfram/web.png');
 }
 
-.gradient-text-1 {
-  background: linear-gradient(150deg, #dda50a, #ec4d37ff);
+.gradient-text {
   line-height: 5.5rem;
   font-size: 5rem !important;
+  pointer-events: none;
+}
+
+.gradient-text-1 {
+  background: linear-gradient(150deg, #dda50a, #ec4d37ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 .gradient-text-2 {
   background: linear-gradient(#57dd0a, rgb(55, 133, 236));
-  line-height: 5.5rem;
-  font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 .gradient-text-3 {
   background: linear-gradient(179deg, #0addcb, rgb(103, 55, 236));
-  line-height: 5.5rem;
-  font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 .gradient-text-4 {
   background: linear-gradient(160deg, #9a0add, rgb(236, 55, 55));
-  line-height: 5.5rem;
-  font-size: 5rem !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  pointer-events: none;
 }
 
 @media (max-width: 900px) {
+  .quai-cards-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .quai-cards {
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 616px));
-    grid-template-rows: repeat(10, minmax(0px, 250px));
+    grid-template-rows: repeat(10, minmax(0px, 275px));
     grid-auto-rows: 1fr;
     gap: 2.5em;
   }
 
   .quai-category-card {
-    height: 500px;
+    height: 550px;
   }
 
   .mobile-scroll-hover {
@@ -392,7 +391,12 @@ export default {
     font-size: 14px !important;
   }
   .gradient-text-features {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
+  }
+
+  .gradient-text {
+    line-height: 5.5rem;
+    font-size: 3rem !important;
   }
 
   .card-color-1 {
@@ -432,5 +436,10 @@ export default {
     grid-row-start: 8;
     grid-row-end: 10;
   }
+
+  /* Apply left spacing just to the Janus image */
+  /* #janusBg {
+    margin-right: 400px;
+  } */
 }
 </style>
