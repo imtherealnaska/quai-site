@@ -12,7 +12,7 @@
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "redirect-ssl": "^3.0.0",
-    "vuetify": "^2.5.8"
+    "@nuxtjs/vuetify": "^1.12.1"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.1",
