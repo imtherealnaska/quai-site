@@ -6,7 +6,7 @@
           <v-col v-for="(list, i) in lists" :key="i">
             <v-row v-for="item in list" :key="item.title">
               <v-btn
-                @click="openLink(item.link)"
+                @click="openLink(item.internal, item.link)"
                 color="white"
                 text
                 rounded
@@ -31,9 +31,12 @@ export default {
   data: () => ({
     lists: [
       [
-        { title: 'FAQs', link: '' },
+        { title: 'FAQs', internal: true, link: 'faq' },
         { title: 'Wallet Setup', link: '' },
-        { title: 'Developer Docs', link: '' },
+        {
+          title: 'Developer Docs',
+          link: 'https://app.gitbook.com/@quai/s/quai/',
+        },
         { title: 'Block Explorer', link: '' },
         { title: 'Network Analyzer', link: '' },
       ],
@@ -44,13 +47,19 @@ export default {
       [
         { title: 'Twitter', link: 'https://twitter.com/QuaiNetwork' },
         { title: 'Discord', link: 'https://discord.gg/p6BKANkYhh' },
-        { title: 'Medium', link: '' },
+        { title: 'Medium', link: 'https://medium.com/quai-network' },
       ],
     ],
   }),
   methods: {
-    openLink(link) {
-      window.open(link, '_blank')
+    openLink(internal, link) {
+      if (link) {
+        if (internal) {
+          this.$router.push({ name: link })
+        } else {
+          window.open(link, '_blank')
+        }
+      }
     },
   },
 }

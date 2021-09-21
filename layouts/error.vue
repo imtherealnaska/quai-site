@@ -45,7 +45,6 @@
         </v-card>
       </v-col>
     </v-row>
-    <NuxtLink to="/"> Home page </NuxtLink>
   </v-app>
 </template>
 

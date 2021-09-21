@@ -17,7 +17,7 @@
         ></div>
         <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-1">Hermes</p>
-          <div class="text--primary">
+          <div class="text--primary" style="pointer-events: none">
             Hermes (/ˈhɜːrmiːz/; Greek: Ἑρμῆς) is considered the herald of the
             gods.<br /><br />
           </div>
@@ -51,7 +51,7 @@
         ></div>
         <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-2">Janus</p>
-          <div class="text--primary">
+          <div class="text--primary" style="pointer-events: none">
             Janus (/ˈdʒeɪnəs/ JAY-nəs; Latin: Iānus) is the god of beginnings,
             gates, transitions, time, duality, doorways,[1] passages, frames,
             and endings.<br /><br />
@@ -80,7 +80,7 @@
         ></div>
         <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-3">Plutus</p>
-          <div class="text--primary">
+          <div class="text--primary" style="pointer-events: none">
             Plutus (/ˈpluːtəs/; Greek: Πλοῦτος, translit. Ploûtos, lit.
             "wealth") is the Greek god of wealth.<br /><br />
           </div>
@@ -111,7 +111,7 @@
         ></div>
         <v-card-text style="position: relative">
           <p class="text-h3 gradient-text-4">Ares</p>
-          <div class="text--primary">
+          <div class="text--primary" style="pointer-events: none">
             Ares (/ˈɛəriːz/; Ancient Greek: Ἄρης) is the Greek god of courage
             and war.<br /><br />
           </div>
@@ -150,7 +150,6 @@ export default {
   },
   methods: {
     onIntersectionElement(data) {
-      console.log(data)
       if (data.name == 'card-1') {
         this.cardOneActive = data.intersect
       }

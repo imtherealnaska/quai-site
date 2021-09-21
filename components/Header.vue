@@ -24,6 +24,8 @@
             rounded
             v-on="on"
             v-bind="attrs"
+            nuxt
+            to="/"
           >
             Home
           </v-btn>
@@ -38,9 +40,33 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      <!-- <v-btn class="header-text" color="white" text rounded> Home </v-btn> -->
-      <v-btn class="header-text" color="white" text rounded> News </v-btn>
-      <v-btn class="header-text" color="white" text rounded> Developers </v-btn>
+      <v-btn
+        class="header-text"
+        color="white"
+        text
+        rounded
+        :to="{ path: '/faq' }"
+      >
+        FAQs
+      </v-btn>
+      <v-btn
+        class="header-text"
+        color="white"
+        text
+        rounded
+        @click="openLink('https://medium.com/quai-network')"
+      >
+        News
+      </v-btn>
+      <v-btn
+        class="header-text"
+        color="white"
+        text
+        rounded
+        @click="openLink('https://app.gitbook.com/@quai/s/quai/')"
+      >
+        Developers
+      </v-btn>
     </div>
   </v-app-bar>
 </template>
@@ -54,6 +80,11 @@ export default {
       { title: 'Roadmap', id: 'roadmap' },
     ],
   }),
+  methods: {
+    openLink(link) {
+      window.open(link, '_blank')
+    },
+  },
 }
 </script>
 

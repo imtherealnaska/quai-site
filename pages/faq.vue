@@ -1,10 +1,8 @@
 <template>
   <div style="height: 100%; overflow-y: scoll">
     <div class="mask" style="width: 100vw; height: 100vh"></div>
-    <HomeLanding id="home" style="margin-top: 4vh" />
-    <HomeCategories id="features" style="margin-top: 34vh" />
-    <HomeAbout id="about" style="margin-top: 20vh" />
-    <HomeRoadmap id="roadmap" style="margin-top: 20vh; margin-bottom: 20vh" />
+    <FAQHeader />
+    <FAQBody id="faq-body" style="margin-top: 4vh" />
   </div>
 </template>
 
@@ -12,7 +10,7 @@
 export default {
   data() {
     return {
-      title: 'The Merged Mined Network of Blockchains',
+      title: 'The Merged Mined Network of Blockchains | FAQs',
     }
   },
   head() {
@@ -20,8 +18,8 @@ export default {
       title: this.title,
       meta: [
         {
-          hid: 'Home',
-          name: 'Home',
+          hid: 'FAQs',
+          name: 'FAQs',
           content:
             'Quai is a scalable network of blockchains designed for the future. Visit our site to learn more!',
         },

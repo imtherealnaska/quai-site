@@ -31,8 +31,14 @@
         <v-col v-if="this.now" class="countdown-col">
           <v-row class="countdown-title">Testnet Launch</v-row>
           <v-row class="countdown-nums">
-            {{ display.days }} Days {{ display.hours }} Hours
-            {{ display.seconds }} Seconds
+            <v-btn
+              @click="openLink(docsLink)"
+              class="countdown-btn"
+              raised
+              elevantion="2"
+              >{{ display.days }} Days {{ display.hours }} Hours
+              {{ display.seconds }} Seconds</v-btn
+            >
           </v-row>
         </v-col>
       </v-row>
@@ -100,13 +106,22 @@ export default {
   position: relative;
   text-align: center;
   font-weight: 600;
+  pointer-events: none;
+  margin: 0 auto;
 }
 
 .countdown-nums {
-  font-size: 36px;
+  font-size: 40px;
   position: relative;
   text-align: center;
   font-weight: 600;
+}
+
+.countdown-btn {
+  background: linear-gradient(120deg, rgba(255, 255, 0, 0.7), #ffa600);
+  font-size: 22px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .landing-row {
@@ -127,10 +142,12 @@ export default {
   opacity: 2 !important;
   color: rgba(255, 255, 255, 1) !important;
   position: relative;
+  pointer-events: none;
 }
 
 .landing-desc {
   position: relative;
+  pointer-events: none;
 }
 
 .landing-btn {
