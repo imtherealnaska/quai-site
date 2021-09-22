@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="overflow: hidden; padding-bottom: 10%">
     <div class="merged-mining-bg"></div>
     <v-container id="card1" class="card-color-2">
       <v-card-text style="position: relative">
@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .merged-mining-bg {
   width: 75vw;
-  height: 100vh;
+  height: 98vh;
   background: transparent;
   background-image: url('./static/wolfram/pillow.png');
   background-size: cover;
