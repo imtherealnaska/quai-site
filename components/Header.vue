@@ -91,7 +91,12 @@ export default {
 <style>
 @media (max-width: 700px) {
   .header-text {
-    font-size: 12px !important;
+    font-size: 10px !important;
+  }
+
+  .v-btn:not(.v-btn--round).v-size--default {
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
 </style>

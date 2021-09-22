@@ -167,6 +167,12 @@ export default {
   .landing-desc {
     font-size: 24px;
   }
+
+  .countdown-title {
+    background: linear-gradient(120deg, #ffa600, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 /*Hide in Other Small Devices */
@@ -175,6 +181,13 @@ export default {
 @media (min-width: 992px) and (max-width: 1199px) {
   .landing-title {
     font-size: 80px;
+  }
+
+  .countdown-title {
+    font-size: 60px;
+    background: linear-gradient(120deg, #ffa600, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -187,6 +200,13 @@ export default {
   .countdown-btn {
     font-size: 22px;
   }
+
+  .countdown-title {
+    font-size: 44px;
+    background: linear-gradient(120deg, #ffa600, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -197,6 +217,17 @@ export default {
 
   .countdown-btn {
     font-size: 22px;
+  }
+
+  .countdown-title {
+    font-size: 32px;
+    background: linear-gradient(120deg, #ffa600, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .countdown-btn {
+    font-size: 14px;
   }
 }
 
@@ -212,6 +243,17 @@ export default {
 
   .landing-row {
     margin: 10%;
+  }
+
+  .countdown-btn {
+    font-size: 22px;
+  }
+
+  .countdown-title {
+    font-size: 32px;
+    background: linear-gradient(120deg, #ffa600, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .countdown-btn {
@@ -244,11 +286,6 @@ export default {
 
   .countdown-title {
     font-size: 32px;
-    position: relative;
-    text-align: center;
-    font-weight: 300;
-    margin: 0 auto;
-    pointer-events: none;
     background: linear-gradient(120deg, #ffa600, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
