@@ -39,7 +39,13 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn text color="#dda50a" style="cursor: pointer">
+          <v-btn
+            text
+            color="#dda50a"
+            style="cursor: pointer"
+            nuxt
+            to="/merged-mining"
+          >
             Learn More
           </v-btn>
         </v-card-actions>
@@ -71,7 +77,7 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn text color="#57dd0a"> Learn More </v-btn>
+          <v-btn text color="#57dd0a" nuxt to="/bridges"> Learn More </v-btn>
         </v-card-actions>
       </div>
       <div id="card2" class="quai-category-card card-color-2">
@@ -102,7 +108,7 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn text color="#0addcb"> Learn More </v-btn>
+          <v-btn text color="#0addcb" nuxt to="/tokenomics"> Learn More </v-btn>
         </v-card-actions>
       </div>
       <div id="card4" class="quai-category-card card-color-4">
@@ -122,7 +128,7 @@
           >
           </HelpersIntersectionObserver>
           <div class="body-text-desc">
-            Ares governs the incetives for defecting from traditional networks
+            Ares governs the incentives for defecting from traditional networks
             and using the Quai Network. Ares has incentives for individuals,
             developers, companies, central banks, and nation states to adopt the
             Quai Network. Many of these incentives are structured with geometric
@@ -132,7 +138,7 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn text color="#9a0add"> Learn More </v-btn>
+          <v-btn text color="#9a0add" nuxt to="/incentives"> Learn More </v-btn>
         </v-card-actions>
       </div>
     </div>
