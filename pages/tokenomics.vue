@@ -100,12 +100,9 @@ export default {
   .body-text-desc {
     font-size: 14px !important;
   }
-  .gradient-text-features {
-    font-size: 3rem !important;
-  }
 
   .gradient-text {
-    line-height: 5.5rem;
+    line-height: 3rem;
     font-size: 3rem !important;
   }
 }

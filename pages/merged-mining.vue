@@ -101,7 +101,7 @@ export default {
   }
 
   .gradient-text {
-    line-height: 5.5rem;
+    line-height: 3rem;
     font-size: 3rem !important;
   }
 }

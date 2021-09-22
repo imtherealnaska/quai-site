@@ -236,13 +236,13 @@ export default {
   .quai-cards {
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 616px));
-    grid-template-rows: repeat(4, minmax(0px, 250px));
+    grid-template-rows: repeat(4, minmax(0px, 275px));
     grid-auto-rows: 1fr;
     gap: 2.5em;
   }
 
   .quai-category-card {
-    height: 250px;
+    height: 275px;
   }
 
   .mobile-scroll-hover {
@@ -253,15 +253,15 @@ export default {
   }
 
   .body-text-desc {
-    font-size: 18px !important;
+    font-size: 14px !important;
   }
   .gradient-text-features {
     font-size: 3rem !important;
   }
 
   .gradient-text {
-    line-height: 5.5rem;
-    font-size: 3rem !important;
+    line-height: 3rem;
+    font-size: 2.5rem !important;
   }
 
   .card-color-1 {
