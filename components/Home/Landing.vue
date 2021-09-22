@@ -109,9 +109,9 @@ export default {
   font-weight: 600;
   pointer-events: none;
   margin: 0 auto;
-  background: linear-gradient(120deg, #ffa600, white);
+  /* background: linear-gradient(120deg, #ffa600, white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .countdown-nums {
@@ -169,9 +169,9 @@ export default {
   }
 
   .countdown-title {
-    background: linear-gradient(120deg, #ffa600, white);
+    /* background: linear-gradient(120deg, #ffa600, white);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
 }
 
@@ -185,9 +185,6 @@ export default {
 
   .countdown-title {
     font-size: 60px;
-    background: linear-gradient(120deg, #ffa600, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -203,9 +200,6 @@ export default {
 
   .countdown-title {
     font-size: 44px;
-    background: linear-gradient(120deg, #ffa600, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -221,9 +215,6 @@ export default {
 
   .countdown-title {
     font-size: 32px;
-    background: linear-gradient(120deg, #ffa600, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .countdown-btn {
@@ -251,9 +242,6 @@ export default {
 
   .countdown-title {
     font-size: 32px;
-    background: linear-gradient(120deg, #ffa600, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .countdown-btn {
@@ -286,9 +274,6 @@ export default {
 
   .countdown-title {
     font-size: 32px;
-    background: linear-gradient(120deg, #ffa600, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 </style>

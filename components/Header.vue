@@ -31,24 +31,36 @@
           </v-btn>
         </template>
         <v-list>
+          <v-list-item v-for="(item, index) in home" :key="index" :to="item.to">
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-menu open-on-hover offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            class="header-text"
+            color="white"
+            text
+            rounded
+            v-on="on"
+            v-bind="attrs"
+            nuxt
+            to="/design"
+          >
+            Protocol Design
+          </v-btn>
+        </template>
+        <v-list>
           <v-list-item
-            v-for="(item, index) in items"
+            v-for="(item, index) in design"
             :key="index"
-            :to="{ path: '/', hash: '#' + item.id }"
+            :to="item.to"
           >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-btn
-        class="header-text"
-        color="white"
-        text
-        rounded
-        :to="{ path: '/faq' }"
-      >
-        FAQs
-      </v-btn>
       <v-btn
         class="header-text"
         color="white"
@@ -74,10 +86,17 @@
 <script>
 export default {
   data: () => ({
-    items: [
-      { title: 'Features', id: 'features' },
-      { title: 'About', id: 'about' },
-      { title: 'Roadmap', id: 'roadmap' },
+    home: [
+      { title: 'Features', to: { path: '/', hash: '#features' } },
+      { title: 'About', to: { path: '/', hash: '#about' } },
+      { title: 'Roadmap', to: { path: '/', hash: '#roadmap' } },
+    ],
+    design: [
+      { title: 'Merged Mining', to: { path: '/merged-mining' } },
+      { title: 'Decentralizd Bridges', to: { path: '/bridges' } },
+      { title: 'Tokenomics', to: { path: '/tokenomics' } },
+      { title: 'Incentives', to: { path: '/incentives' } },
+      { title: 'FAQs', to: { path: '/faq' } },
     ],
   }),
   methods: {
