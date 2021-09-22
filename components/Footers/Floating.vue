@@ -24,7 +24,7 @@
 export default {
   data: () => ({
     icons: [
-      { icon: 'mdi-discord', link: 'https://discord.gg/p6BKANkYhh' },
+      { icon: 'mdi-discord', link: 'https://discord.gg/ngw88VXXnV' },
       { icon: 'mdi-github', link: ' ' },
       { icon: 'mdi-twitter', link: 'https://twitter.com/QuaiNetwork' },
       // { icon: 'mdi-instagram', link: ' ' },

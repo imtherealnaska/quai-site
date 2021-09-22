@@ -47,12 +47,15 @@ export default {
   router: {
     scrollBehavior(to) {
       if (to.hash) {
+        var doc = document.querySelector(to.hash)
+        if (doc == null) {
+          return window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
         return window.scrollTo({
           top: document.querySelector(to.hash).offsetTop,
           behavior: 'smooth',
         })
       }
-      return window.scrollTo({ top: 0, behavior: 'smooth' })
     },
   },
 

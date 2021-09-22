@@ -46,7 +46,7 @@ export default {
       ],
       [
         { title: 'Twitter', link: 'https://twitter.com/QuaiNetwork' },
-        { title: 'Discord', link: 'https://discord.gg/p6BKANkYhh' },
+        { title: 'Discord', link: 'https://discord.gg/ngw88VXXnV' },
         { title: 'Medium', link: 'https://medium.com/quai-network' },
       ],
     ],

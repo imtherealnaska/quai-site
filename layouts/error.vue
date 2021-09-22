@@ -18,7 +18,7 @@
             <p>
               If you have questions, please join the official
               <a
-                href="https://discord.gg/p6BKANkYhh"
+                href="https://discord.gg/ngw88VXXnV"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="chat"
