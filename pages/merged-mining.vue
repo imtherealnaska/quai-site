@@ -18,7 +18,6 @@
           trusted links. Quai initially will take the form of a 3x3 pyramid. Our
           roadmap contains flexible hierarchies as demand fluctuates for the
           network.
-          
         </div>
       </v-card-text>
     </v-container>

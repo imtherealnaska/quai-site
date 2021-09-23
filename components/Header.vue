@@ -20,25 +20,14 @@
         color="white"
         text
         rounded
-        v-on="on"
-        v-bind="attrs"
         nuxt
         to="/#features"
-      > 
+      >
         Features
       </v-btn>
-      <v-btn
-        class="header-text"
-        color="white"
-        text
-        rounded
-        v-on="on"
-        v-bind="attrs"
-        nuxt
-        to="/#roadmap" 
-      > 
+      <v-btn class="header-text" color="white" text rounded nuxt to="/#roadmap">
         Roadmap
-      </v-btn>       
+      </v-btn>
       <v-btn
         class="header-text"
         color="white"
@@ -57,16 +46,7 @@
       >
         Developers
       </v-btn>
-      <v-btn
-        class="header-text"
-        color="white"
-        text
-        rounded
-        v-on="on"
-        v-bind="attrs"
-        nuxt
-        to="/faq"
-      >
+      <v-btn class="header-text" color="white" text rounded nuxt to="/faq">
         FAQ
       </v-btn>
     </div>
