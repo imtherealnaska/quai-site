@@ -3,21 +3,22 @@
     <div class="merged-mining-bg"></div>
     <v-container id="card1" class="card-color-1">
       <v-card-text style="position: relative">
-        <h1 class="text-h1 gradient-text gradient-text-1">
-          Merged Mining: Sharing Hashrate Across Blockchains
-        </h1>
+        <h3 class="text-h3 gradient-text gradient-text-1">
+          Merge Mining: Duplicating Hashrate Across Blockchains
+        </h3>
         <div class="text--primary" style="pointer-events: none">
           Hermes controlls the organization and structure of the Quai Network,
           dictating it's shape and form.<br /><br />
         </div>
         <div class="body-text-desc">
-          Merged Mining utilizes hashrate across multiple blockchains. In many
+          Merge Mining utilizes hashrate across multiple blockchains. In many
           cases, these disparate blockchains do not share the same incentives or
           utilize the true power of merged mining. The Quai Network shares
           headers of hierarchical chains in a way that creates verifiable and
           trusted links. Quai initially will take the form of a 3x3 pyramid. Our
           roadmap contains flexible hierarchies as demand fluctuates for the
           network.
+          
         </div>
       </v-card-text>
     </v-container>
@@ -28,7 +29,7 @@
 export default {
   data() {
     return {
-      title: 'The Merged Mined Network of Blockchains | Merged Mining',
+      title: 'The Merge Mined Network of Blockchains | Merge Mining',
     }
   },
   head() {
@@ -36,8 +37,8 @@ export default {
       title: this.title,
       meta: [
         {
-          hid: 'Merged Mining',
-          name: 'Merged Mining',
+          hid: 'Merge Mining',
+          name: 'Merge Mining',
           content:
             'Quai is a scalable network of blockchains designed for the future. Visit our site to learn more!',
         },
@@ -72,11 +73,8 @@ export default {
 }
 
 .card-color-1 {
-  margin-top: 10%;
+  margin-top: 50px;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px#dda50a !important;
-  -moz-box-shadow: 0 0 20px #dda50a !important;
-  box-shadow: 0 0 20px #dda50a !important;
 }
 
 .wolfram-bg-1 {

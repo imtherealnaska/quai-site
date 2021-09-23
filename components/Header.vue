@@ -23,18 +23,6 @@
         v-on="on"
         v-bind="attrs"
         nuxt
-        to="/"
-      >
-        Home
-      </v-btn>
-      <v-btn
-        class="header-text"
-        color="white"
-        text
-        rounded
-        v-on="on"
-        v-bind="attrs"
-        nuxt
         to="/#features"
       > 
         Features
