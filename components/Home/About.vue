@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 100%">
+  <div class="about-section">
     <v-container>
       <v-row class="about-container" style="width: 100%">
         <v-col cols="12" sm="6" md="6">
@@ -13,30 +13,31 @@
             <div class="about-text-3">Decentralized.</div>
           </v-row>
           <v-row class="about-desc"
-            >The creators of Quai believe in a future where Proof of Work is
-            scalable. That is why Quai is built with a multi-chain approach to
-            scalability. Quai’s unique network of blockchains allows for
-            seamless interaction across chains while maintaining
-            decentralization. Quai is also EVM compatible, so bringing over your
-            favorite DeFi protocols or NFT projects is a breeze.
+            >Quai’s unique network of blockchains allows for seamless
+            interaction across chains while maintaining decentralization. Quai
+            is EVM compatible, so migrating your favorite DeFi protocols or NFT
+            projects is a breeze.
           </v-row>
         </v-col>
-        <v-col cols="12" sm="12" md="6">
-          <v-row style="font-size: 100px">
-            <video
-              class="animation"
-              muted
-              autoplay
-              loop
-              playsinline
-              defaultMuted
-              style="max-width: 100%"
-              id="video"
-            >
-              <source src="~/assets/animation.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </v-row>
+        <v-col
+          cols="12"
+          sm="12"
+          md="6"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <video
+            class="animation"
+            muted
+            autoplay
+            loop
+            playsinline
+            defaultMuted
+            style="max-width: 100%"
+            id="video"
+          >
+            <source src="~/assets/animation.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </v-col>
       </v-row>
     </v-container>
@@ -44,7 +45,14 @@
       elevation="2"
       raised
       x-large
-      style="margin-top: 200px; display: flex; margin: 0 auto"
+      style="
+        display: flex;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-color: rgb(236, 77, 55, 0.9);
+      "
+      target="_blank"
+      @click="openLink('https://arxiv.org/abs/1811.00125')"
       >Read The Whitepaper</v-btn
     >
   </div>
@@ -58,14 +66,21 @@ export default {
       vid.playbackRate = 1.2
     }
   },
+  methods: {
+    openLink(link) {
+      window.open(link, '_blank')
+    },
+  },
 }
 </script>
 
 <style scoped>
 .animation {
-  margin: 20%;
-  width: 100%;
+  width: 95%;
   border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px white;
+  -moz-box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px white;
 }
 
 .about-text-1 {
@@ -97,13 +112,6 @@ export default {
   .about-container {
     margin-left: 2%;
     margin-right: 2%;
-  }
-
-  .animation {
-    margin-top: 60px;
-    margin-left: 0;
-    width: 90%;
-    border-radius: 20px;
   }
 
   .about-text-1 {

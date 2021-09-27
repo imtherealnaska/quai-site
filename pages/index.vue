@@ -52,6 +52,10 @@ export default {
   margin-top: 60vh;
 }
 
+.index-spacing-2 {
+  margin-top: 15vh;
+}
+
 /* Portrait tablets and small desktops */
 @media (max-width: 1880) {
   .index-spacing-1 {
