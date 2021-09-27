@@ -55,7 +55,7 @@ export default {
   mounted() {
     var vid = document.getElementById('video')
     if (vid != null) {
-      vid.playbackRate = 1.4
+      vid.playbackRate = 1.2
     }
   },
 }
