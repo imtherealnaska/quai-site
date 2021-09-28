@@ -25,6 +25,10 @@ export default {
           content:
             'Quai is a scalable network of blockchains designed for the future. Visit our site to learn more!',
         },
+        {
+          name: 'dmca-site-verification',
+          content: 'R2dCZFNJdkNQOUFMYndpZTlOYk0xdz090',
+        },
       ],
     }
   },
