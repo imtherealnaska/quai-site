@@ -20,6 +20,15 @@
             </v-row>
           </v-col>
         </v-row>
+        <a
+          href="//www.dmca.com/Protection/Status.aspx?ID=6d1b5298-cc9d-4f02-b8fa-12f2878950b4"
+          title="DMCA.com Protection Status"
+          class="dmca-badge"
+        >
+          <img
+            src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-11.png?ID=6d1b5298-cc9d-4f02-b8fa-12f2878950b4"
+            alt="DMCA.com Protection Status"
+        /></a>
         <div>
           The entirety of this site is protected by copyright ©
           {{ new Date().getFullYear() }} Dominant Strategies. All rights
@@ -33,6 +42,13 @@
 
 <script>
 export default {
+  head: {
+    script: [
+      {
+        src: 'https://images.dmca.com/Badges/DMCABadgeHelper.min.js',
+      },
+    ],
+  },
   data: () => ({
     lists: [
       [

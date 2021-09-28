@@ -50,6 +50,7 @@
         margin: 0 auto;
         margin-top: 100px;
         background-color: rgb(236, 77, 55, 0.9);
+        pointer-events: all;
       "
       target="_blank"
       @click="openLink('https://arxiv.org/abs/1811.00125')"
@@ -75,6 +76,10 @@ export default {
 </script>
 
 <style scoped>
+.about-section {
+  pointer-events: none;
+}
+
 .animation {
   width: 95%;
   border-radius: 20px;

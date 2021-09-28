@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 100%">
+  <div style="height: 100%; pointer-events: none">
     <v-container>
       <v-timeline>
         <v-timeline-item
