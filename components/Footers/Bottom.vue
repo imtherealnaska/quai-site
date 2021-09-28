@@ -20,9 +20,14 @@
             </v-row>
           </v-col>
         </v-row>
+        <div>
+          The entirety of this site is protected by copyright ©
+          {{ new Date().getFullYear() }} Dominant Strategies. All rights
+          reserved.
+        </div>
       </v-card-text>
     </v-card>
-    <v-row justify="center" no-gutters> </v-row>
+    <v-row justify="center" no-gutters></v-row>
   </v-footer>
 </template>
 
