@@ -52,7 +52,7 @@ export default {
       buildLink: 'https://github.com/spruce-solutions',
       docsLink: 'https://docs.quai.network/',
       now: null,
-      end: new Date('October 14, 2021 15:00:00'),
+      end: new Date('November 14, 2021 15:00:00'),
       tick: null,
     }
   },
