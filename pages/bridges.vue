@@ -3,9 +3,9 @@
     <div class="merged-mining-bg"></div>
     <v-container id="card1" class="card-color-3">
       <v-card-text style="position: relative">
-        <h1 class="text-h1 gradient-text gradient-text-3">
+        <h3 class="text-h1 gradient-text gradient-text-3">
           Decentralized Bridges: Trustless Cross-Chain Value Transfers
-        </h1>
+        </h3>
         <div class="text--primary" style="pointer-events: none">
           Janus governs the transfer of value within and across the Quai
           Network.<br /><br />
@@ -71,9 +71,6 @@ export default {
 .card-color-3 {
   margin-top: 10%;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px #57dd0a !important;
-  -moz-box-shadow: 0 0 20px #57dd0a !important;
-  box-shadow: 0 0 20px #57dd0a !important;
 }
 
 .gradient-text {
