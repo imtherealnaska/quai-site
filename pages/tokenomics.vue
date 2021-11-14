@@ -3,9 +3,9 @@
     <div class="merged-mining-bg"></div>
     <v-container id="card1" class="card-color-2">
       <v-card-text style="position: relative">
-        <h1 class="text-h1 gradient-text gradient-text-2">
+        <h3 class="text-h1 gradient-text gradient-text-2">
           Tokenomics: Governing The Flow of Money
-        </h1>
+        </h3>
         <div class="text--primary" style="pointer-events: none">
           Plutus governs the creation and flow of value on the Quai Network.<br /><br />
         </div>
@@ -79,9 +79,6 @@ export default {
 .card-color-2 {
   margin-top: 10%;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px #0addcb !important;
-  -moz-box-shadow: 0 0 20px #0addcb !important;
-  box-shadow: 0 0 20px #0addcb !important;
 }
 
 .gradient-text {

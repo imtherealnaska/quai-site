@@ -3,9 +3,9 @@
     <div class="merged-mining-bg"></div>
     <v-container id="card1" class="card-color-4">
       <v-card-text style="position: relative">
-        <h1 class="text-h1 gradient-text gradient-text-4">
+        <h3 class="text-h1 gradient-text gradient-text-4">
           Incentives: Using Blockchain Utility for Value Creation
-        </h1>
+        </h3>
         <div class="text--primary" style="pointer-events: none">
           Ares dictates incentives that drive growth on the Quai Network.<br /><br />
         </div>
@@ -72,9 +72,6 @@ export default {
 .card-color-4 {
   margin-top: 10%;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px #9a0add !important;
-  -moz-box-shadow: 0 0 20px #9a0add !important;
-  box-shadow: 0 0 20px #9a0add !important;
 }
 
 .gradient-text {
