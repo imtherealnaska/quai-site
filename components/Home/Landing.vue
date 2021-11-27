@@ -35,8 +35,7 @@
               class="countdown-btn"
               raised
               elevantion="2"
-              >{{ display.days }} Days {{ display.hours }} Hours
-              {{ display.seconds }} Seconds</v-btn
+              >Now Live!</v-btn
             >
           </v-row>
         </v-col>
