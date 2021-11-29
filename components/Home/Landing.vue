@@ -274,5 +274,12 @@ export default {
   .countdown-title {
     font-size: 32px;
   }
+
+  .landing-btn-row {
+    width: 100%;
+    margin: auto 0;
+    margin-top: 20%;
+    justify-content: center;
+  }
 }
 </style>
